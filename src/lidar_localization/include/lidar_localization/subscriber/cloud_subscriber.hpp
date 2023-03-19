@@ -20,10 +20,10 @@
 #include <pcl_conversions/pcl_conversions.h>
 
 namespace lidar_localization {
-class CloudSubcriber {
+class CloudSubscriber {
    public:
-    CloudSubcriber(ros::NodeHandle& nh, std::string topic_name, size_t buff_size);
-    CloudSubcriber() = default;
+    CloudSubscriber(ros::NodeHandle& nh, std::string topic_name, size_t buff_size);
+    CloudSubscriber() = default;
     void ParseData(std::deque<CloudData>& cloud_data_buff);
 
    private:

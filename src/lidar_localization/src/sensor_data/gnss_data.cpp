@@ -12,6 +12,9 @@
 #include "lidar_localization/sensor_data/gnss_data.hpp"
 #include <glog/logging.h>
 
+bool lidar_localization::GNSSData::origin_position_inited = false;
+GeographicLib::LocalCartesian lidar_localization::GNSSData::geo_converter;
+
 namespace lidar_localization {
 void GNSSData::InitOriginPosition() {
     geo_converter.Reset(latitude, longitude, altitude);

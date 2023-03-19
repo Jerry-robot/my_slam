@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     ros::NodeHandle nh;
 
     std::shared_ptr<IMUSubscriber> imu_sub_ptr = std::make_shared<IMUSubscriber>(nh, "/kitti/oxts/imu", 1000000);
-    std::shared_ptr<CloudSubcriber> cloud_sub_ptr = std::make_shared<CloudSubcriber>(nh, "/kitti/oxts/pointcloud", 1000000);
+    std::shared_ptr<CloudSubscriber> cloud_sub_ptr = std::make_shared<CloudSubscriber>(nh, "/kitti/oxts/pointcloud", 1000000);
     std::shared_ptr<GNSSSubscriber> gnss_sub_ptr = std::make_shared<GNSSSubscriber>(nh, "/kitti/oxts/gps/fix", 1000000);
 
     
