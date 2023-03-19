@@ -81,9 +81,33 @@ lidar_localization/CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o.prov
 lidar_localization/CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o.provides.build: lidar_localization/CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o
 
 
+lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o: lidar_localization/CMakeFiles/test_frame_node.dir/flags.make
+lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/publisher/cloud_publisher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/publisher/cloud_publisher.cpp
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.i"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gjw/my_slam/src/lidar_localization/src/publisher/cloud_publisher.cpp > CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.i
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.s"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gjw/my_slam/src/lidar_localization/src/publisher/cloud_publisher.cpp -o CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.s
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.requires:
+
+.PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.requires
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.provides: lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.requires
+	$(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.provides.build
+.PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.provides
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.provides.build: lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o
+
+
 lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o: lidar_localization/CMakeFiles/test_frame_node.dir/flags.make
 lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/sensor_data/gnss_data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/sensor_data/gnss_data.cpp
 
 lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.i: cmake_force
@@ -107,7 +131,7 @@ lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.
 
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o: lidar_localization/CMakeFiles/test_frame_node.dir/flags.make
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/subscriber/cloud_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/subscriber/cloud_subscriber.cpp
 
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.i: cmake_force
@@ -131,7 +155,7 @@ lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscribe
 
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o: lidar_localization/CMakeFiles/test_frame_node.dir/flags.make
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/subscriber/gnss_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/subscriber/gnss_subscriber.cpp
 
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.i: cmake_force
@@ -155,7 +179,7 @@ lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber
 
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o: lidar_localization/CMakeFiles/test_frame_node.dir/flags.make
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/subscriber/imu_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/subscriber/imu_subscriber.cpp
 
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.i: cmake_force
@@ -177,22 +201,50 @@ lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.
 lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o.provides.build: lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o
 
 
+lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o: lidar_localization/CMakeFiles/test_frame_node.dir/flags.make
+lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/tf_listener/tf_listener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/tf_listener/tf_listener.cpp
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.i"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gjw/my_slam/src/lidar_localization/src/tf_listener/tf_listener.cpp > CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.i
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.s"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gjw/my_slam/src/lidar_localization/src/tf_listener/tf_listener.cpp -o CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.s
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.requires:
+
+.PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.requires
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.provides: lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.requires
+	$(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.provides.build
+.PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.provides
+
+lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.provides.build: lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o
+
+
 # Object files for target test_frame_node
 test_frame_node_OBJECTS = \
 "CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o" \
+"CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o" \
 "CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o" \
 "CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o" \
 "CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o" \
-"CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o"
+"CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o" \
+"CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o"
 
 # External object files for target test_frame_node
 test_frame_node_EXTERNAL_OBJECTS =
 
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o
+/home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o
+/home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/build.make
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: /opt/ros/melodic/lib/libpcl_ros_filter.so
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: /opt/ros/melodic/lib/libpcl_ros_tf.so
@@ -859,7 +911,7 @@ test_frame_node_EXTERNAL_OBJECTS =
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtksys-6.3.so.6.3.0
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.3.so.6.3.0
 /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node: lidar_localization/CMakeFiles/test_frame_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable /home/gjw/my_slam/devel/lib/lidar_localization/test_frame_node"
 	cd /home/gjw/my_slam/build/lidar_localization && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_frame_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -868,10 +920,12 @@ lidar_localization/CMakeFiles/test_frame_node.dir/build: /home/gjw/my_slam/devel
 .PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/build
 
 lidar_localization/CMakeFiles/test_frame_node.dir/requires: lidar_localization/CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o.requires
+lidar_localization/CMakeFiles/test_frame_node.dir/requires: lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o.requires
 lidar_localization/CMakeFiles/test_frame_node.dir/requires: lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o.requires
 lidar_localization/CMakeFiles/test_frame_node.dir/requires: lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o.requires
 lidar_localization/CMakeFiles/test_frame_node.dir/requires: lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o.requires
 lidar_localization/CMakeFiles/test_frame_node.dir/requires: lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/imu_subscriber.cpp.o.requires
+lidar_localization/CMakeFiles/test_frame_node.dir/requires: lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o.requires
 
 .PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/requires
 

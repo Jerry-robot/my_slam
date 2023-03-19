@@ -509,7 +509,7 @@ lidar_localization/preinstall: lidar_localization/third_party/GeographicLib/prei
 lidar_localization/CMakeFiles/test_frame_node.dir/all: lidar_localization/third_party/GeographicLib/CMakeFiles/libGeographiccc.dir/all
 	$(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/depend
 	$(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=16,17,18,19,20,21 "Built target test_frame_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23 "Built target test_frame_node"
 .PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/all
 
 # Include target in all.
@@ -519,7 +519,7 @@ all: lidar_localization/CMakeFiles/test_frame_node.dir/all
 
 # Build rule for subdir invocation for target.
 lidar_localization/CMakeFiles/test_frame_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gjw/my_slam/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gjw/my_slam/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 lidar_localization/CMakeFiles/test_frame_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gjw/my_slam/build/CMakeFiles 0
 .PHONY : lidar_localization/CMakeFiles/test_frame_node.dir/rule

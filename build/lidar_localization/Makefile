@@ -1352,6 +1352,33 @@ tf2_msgs_generate_messages_nodejs/fast:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make lidar_localization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
 
+src/publisher/cloud_publisher.o: src/publisher/cloud_publisher.cpp.o
+
+.PHONY : src/publisher/cloud_publisher.o
+
+# target to build an object file
+src/publisher/cloud_publisher.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o
+.PHONY : src/publisher/cloud_publisher.cpp.o
+
+src/publisher/cloud_publisher.i: src/publisher/cloud_publisher.cpp.i
+
+.PHONY : src/publisher/cloud_publisher.i
+
+# target to preprocess a source file
+src/publisher/cloud_publisher.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.i
+.PHONY : src/publisher/cloud_publisher.cpp.i
+
+src/publisher/cloud_publisher.s: src/publisher/cloud_publisher.cpp.s
+
+.PHONY : src/publisher/cloud_publisher.s
+
+# target to generate assembly for a file
+src/publisher/cloud_publisher.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.s
+.PHONY : src/publisher/cloud_publisher.cpp.s
+
 src/sensor_data/gnss_data.o: src/sensor_data/gnss_data.cpp.o
 
 .PHONY : src/sensor_data/gnss_data.o
@@ -1487,6 +1514,33 @@ src/test_frame_node.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.s
 .PHONY : src/test_frame_node.cpp.s
 
+src/tf_listener/tf_listener.o: src/tf_listener/tf_listener.cpp.o
+
+.PHONY : src/tf_listener/tf_listener.o
+
+# target to build an object file
+src/tf_listener/tf_listener.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.o
+.PHONY : src/tf_listener/tf_listener.cpp.o
+
+src/tf_listener/tf_listener.i: src/tf_listener/tf_listener.cpp.i
+
+.PHONY : src/tf_listener/tf_listener.i
+
+# target to preprocess a source file
+src/tf_listener/tf_listener.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.i
+.PHONY : src/tf_listener/tf_listener.cpp.i
+
+src/tf_listener/tf_listener.s: src/tf_listener/tf_listener.cpp.s
+
+.PHONY : src/tf_listener/tf_listener.s
+
+# target to generate assembly for a file
+src/tf_listener/tf_listener.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.s
+.PHONY : src/tf_listener/tf_listener.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1579,6 +1633,9 @@ help:
 	@echo "... actionlib_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... src/publisher/cloud_publisher.o"
+	@echo "... src/publisher/cloud_publisher.i"
+	@echo "... src/publisher/cloud_publisher.s"
 	@echo "... src/sensor_data/gnss_data.o"
 	@echo "... src/sensor_data/gnss_data.i"
 	@echo "... src/sensor_data/gnss_data.s"
@@ -1594,6 +1651,9 @@ help:
 	@echo "... src/test_frame_node.o"
 	@echo "... src/test_frame_node.i"
 	@echo "... src/test_frame_node.s"
+	@echo "... src/tf_listener/tf_listener.o"
+	@echo "... src/tf_listener/tf_listener.i"
+	@echo "... src/tf_listener/tf_listener.s"
 .PHONY : help
 
 

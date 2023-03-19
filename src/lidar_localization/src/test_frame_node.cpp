@@ -12,10 +12,13 @@
 #include <ros/ros.h>
 #include "glog/logging.h"
 
+#include "lidar_localization/global_defination/global_defination.h.in"
+
 #include "lidar_localization/subscriber/imu_subscriber.hpp"
 #include "lidar_localization/subscriber/cloud_subscriber.hpp"
 #include "lidar_localization/subscriber/gnss_subscriber.hpp"
-#include "lidar_localization/global_defination/global_defination.h.in"
+#include <lidar_localization/tf_listener/tf_listener.hpp>
+#include "lidar_localization/publisher/cloud_publisher.hpp"
 
 using namespace lidar_localization;
 
@@ -31,8 +34,9 @@ int main(int argc, char *argv[])
     std::shared_ptr<IMUSubscriber> imu_sub_ptr = std::make_shared<IMUSubscriber>(nh, "/kitti/oxts/imu", 1000000);
     std::shared_ptr<CloudSubscriber> cloud_sub_ptr = std::make_shared<CloudSubscriber>(nh, "/kitti/oxts/pointcloud", 1000000);
     std::shared_ptr<GNSSSubscriber> gnss_sub_ptr = std::make_shared<GNSSSubscriber>(nh, "/kitti/oxts/gps/fix", 1000000);
-
+    std::shared_ptr<TFListener> lidar_to_imu_ptr = std::make_shared<TFListener>(nh, "velo_link", "imu_link");
     
+    std::shared_ptr<CloudPublisher> cloud_pub_ptr = std::make_shared<CloudPublisher>(nh, "/current_sacn", 100, "/map");    
 
     std::deque<IMUData> imu_data_buff;
     std::deque<CloudData> cloud_data_buff;

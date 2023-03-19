@@ -766,9 +766,6 @@ libGeographiccc_LIB_DEPENDS:STATIC=
 //Value Computed by CMake
 lidar_localization_BINARY_DIR:STATIC=/home/gjw/my_slam/build/lidar_localization
 
-//Dependencies for target
-lidar_localization_LIB_DEPENDS:STATIC=
-
 //Value Computed by CMake
 lidar_localization_SOURCE_DIR:STATIC=/home/gjw/my_slam/src/lidar_localization
 
