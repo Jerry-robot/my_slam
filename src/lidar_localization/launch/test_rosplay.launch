@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+        
+    <arg name="bag_filename" default="/home/gjw/bagfiles/2011_10_03/kitti_2011_10_03_drive_0027_synced.bag"/>
+
+    <node name="playbag" pkg="rosbag" type="play"  output="screen" required="false"
+        args="--clock $(arg bag_filename)">
+    </node>     
+
+</launch>

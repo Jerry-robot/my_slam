@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/gjw/my_slam/build/gtest/cmake_install.cmake")
+  include("/home/gjw/my_slam/build/lidar_localization/cmake_install.cmake")
 
 endif()
 

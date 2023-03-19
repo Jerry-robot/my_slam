@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/home/gjw/carto_ws/cartographer_detailed_comments_ws/install_isolated/include/**",
+                "/opt/ros/melodic/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/src/lidar_localization/include",
+                "/usr/include/c++/7",
+                "/usr/include/x86_64-linux-gnu/c++/7",
+                "${workspaceFolder}/src/lidar_localization/third_party/GeographicLib/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/gjw/my_slam/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/gjw/my_slam/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/gjw/my_slam/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/gjw/my_slam/src:$ROS_PACKAGE_PATH"
