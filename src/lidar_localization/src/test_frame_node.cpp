@@ -25,11 +25,11 @@
 using namespace lidar_localization;
 
 int main(int argc, char* argv[]) {
+    setlocale(LC_ALL, "");
     google::InitGoogleLogging(argv[0]);
     FLAGS_log_dir = WORK_SPACE_PATH + "/log";
     FLAGS_alsologtostderr = 1;
 
-    setlocale(LC_ALL, "");
     ros::init(argc, argv, "test_frame_node");
     ros::NodeHandle nh;
 
@@ -61,9 +61,10 @@ int main(int argc, char* argv[]) {
         gnss_sub_ptr->ParseData(gnss_data_buff);
 
         if (!transform_received) {
+            // base:"velo_link", child: "imu_link"
             if (lidar_to_imu_ptr->LookupData(lidar_to_imu)) {
                 transform_received = true;
-                LOG(INFO)<<"lidar to imu transform is: "<<std::endl<<lidar_to_imu;
+                LOG(INFO)<<"lidar to imu transform matrix is:"<<std::endl<<lidar_to_imu;
             }
         } else {
             while (cloud_data_buff.size() > 0 && imu_data_buff.size() > 0 && gnss_data_buff.size() > 0) {
@@ -78,7 +79,6 @@ int main(int argc, char* argv[]) {
                     imu_data_buff.pop_front();
                     gnss_data_buff.pop_front();
                 } else {
-                    // std::cout<<"process data!!!"<<std::endl;
                     cloud_data_buff.pop_front();
                     imu_data_buff.pop_front();
                     gnss_data_buff.pop_front();
@@ -94,7 +94,6 @@ int main(int argc, char* argv[]) {
                     odometry_matrix(0, 3) = gnss_data.local_E;
                     odometry_matrix(1, 3) = gnss_data.local_N;
                     odometry_matrix(2, 3) = gnss_data.local_U;
-
                     odometry_matrix.block<3,3>(0,0) = imu_data.GetOrientationMatrix();
 
                     odometry_matrix *= lidar_to_imu;

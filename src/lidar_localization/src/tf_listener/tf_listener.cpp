@@ -18,6 +18,13 @@ TFListener::TFListener(ros::NodeHandle& nh, std::string base_frame_id, std::stri
         
     }
 
+/**
+ * @brief 获取child_frame_id_ to base_frame_id 的坐标变化
+ * 
+ * @param transform_matrix 
+ * @return true 
+ * @return false 
+ */
 bool TFListener::LookupData(Eigen::Matrix4f& transform_matrix){
     try{
         tf::StampedTransform transform;
@@ -29,6 +36,14 @@ bool TFListener::LookupData(Eigen::Matrix4f& transform_matrix){
     }
 }
 
+/**
+ * @brief StampedTransform ---> matrix
+ * 
+ * @param 输入：transform 
+ * @param 输出：transform_matrix 
+ * @return true 
+ * @return false 
+ */
 bool TFListener::TransformToMatrix(const tf::StampedTransform& transform, Eigen::Matrix4f& transform_matrix){
     Eigen::Translation3f tl_btol(transform.getOrigin().getX(), transform.getOrigin().getY(), transform.getOrigin().getZ());
 
@@ -39,7 +54,6 @@ bool TFListener::TransformToMatrix(const tf::StampedTransform& transform, Eigen:
     Eigen::AngleAxisf rot_z_btol(yaw, Eigen::Vector3f::UnitZ());
 
     transform_matrix =(tl_btol * rot_z_btol*rot_y_btol*rot_x_btol).matrix();
-
     return true;
 }
 
