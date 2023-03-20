@@ -61,6 +61,7 @@
 /home/gjw/my_slam/build/lidar_localization/CMakeFiles/bond_generate_messages_eus.dir
 /home/gjw/my_slam/build/lidar_localization/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir
 /home/gjw/my_slam/build/lidar_localization/CMakeFiles/nodelet_generate_messages_lisp.dir
+/home/gjw/my_slam/build/lidar_localization/CMakeFiles/test_tf_node.dir
 /home/gjw/my_slam/build/lidar_localization/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/gjw/my_slam/build/lidar_localization/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/gjw/my_slam/build/lidar_localization/CMakeFiles/pcl_ros_gencfg.dir

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidar_localization)/rviz/test_frame.rviz"/>
+
+    <node name="test_frame_node" pkg="lidar_localization" type="test_tf_node"  output="screen"/>
+
+    <node name="reference_world_broadcaster1" pkg="tf2_ros" type="static_transform_publisher" args="0 0 10 1.57 0 0 world imu"/>
+
+    <node name="reference_world_broadcaster2" pkg="tf2_ros" type="static_transform_publisher" args="1 0 0 0 1.57 0 imu lidar"/>
+    
+</launch>

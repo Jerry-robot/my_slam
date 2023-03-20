@@ -24,6 +24,7 @@
 
 using namespace lidar_localization;
 
+
 int main(int argc, char* argv[]) {
     setlocale(LC_ALL, "");
     google::InitGoogleLogging(argv[0]);
@@ -37,8 +38,7 @@ int main(int argc, char* argv[]) {
     std::shared_ptr<CloudSubscriber> cloud_sub_ptr =
         std::make_shared<CloudSubscriber>(nh, "/kitti/velo/pointcloud", 1000000);
     std::shared_ptr<GNSSSubscriber> gnss_sub_ptr = std::make_shared<GNSSSubscriber>(nh, "/kitti/oxts/gps/fix", 1000000);
-    std::shared_ptr<TFListener> lidar_to_imu_ptr = std::make_shared<TFListener>(nh, "velo_link", "imu_link");
-
+    std::shared_ptr<TFListener> lidar_to_imu_ptr = std::make_shared<TFListener>(nh, "imu_link", "velo_link");
     std::shared_ptr<CloudPublisher> cloud_pub_ptr = std::make_shared<CloudPublisher>(nh, "/current_scan", 100, "/map");
     std::shared_ptr<OdometryPublisher> odometry_pub_ptr =
         std::make_shared<OdometryPublisher>(nh, "lidar_odom", "/map", "/lidar", 100);
@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
     std::deque<IMUData> imu_data_buff;
     std::deque<CloudData> cloud_data_buff;
     std::deque<GNSSData> gnss_data_buff;
-
+    // lidar_to_imu 其实是imu to lidar
     Eigen::Matrix4f lidar_to_imu = Eigen::Matrix4f::Identity();
 
     bool transform_received = false;
@@ -90,11 +90,24 @@ int main(int argc, char* argv[]) {
                     }
 
                     Eigen::Matrix4f odometry_matrix;
+                    // 雷达与IMU在一个坐标系下
                     gnss_data.UpdateXYZ();
                     odometry_matrix(0, 3) = gnss_data.local_E;
                     odometry_matrix(1, 3) = gnss_data.local_N;
                     odometry_matrix(2, 3) = gnss_data.local_U;
+                    // 当前odometry_matrixwi 为imu_Link在世界坐标系中位姿
                     odometry_matrix.block<3,3>(0,0) = imu_data.GetOrientationMatrix();
+
+                    // Eigen::Vector3f eulerAngle1=odometry_matrix.block<3,3>(0,0).eulerAngles(0,1,2);
+                    Eigen::Vector3f eulerAngle2=lidar_to_imu.block<3,3>(0,0).eulerAngles(0,1,2);
+                    // LOG(INFO)<<"******************************************"<<std::endl;
+                    // LOG(INFO)<<"map to imu transform matrix is:"<<std::endl<<odometry_matrix;
+                    // eulerAngle1 = eulerAngle1*180/M_PI; 
+                    eulerAngle2 = eulerAngle2*180/M_PI; 
+                    // LOG(INFO)<<std::endl<<eulerAngle1[0]<<" "<<eulerAngle1[1]<<" "<<eulerAngle1[2]<<std::endl;
+                    // LOG(INFO)<<"lidar to imu lidar_to_imu matrix is:"<<std::endl<<lidar_to_imu;
+                    LOG(INFO)<<std::endl<<eulerAngle2[0]<<" "<<eulerAngle2[1]<<" "<<eulerAngle2[2]<<std::endl;
+
 
                     odometry_matrix *= lidar_to_imu;
                     
@@ -109,6 +122,12 @@ int main(int argc, char* argv[]) {
 
         rate.sleep();
     }
+
+
+
+
+
+
 
     return 0;
 }

@@ -558,6 +558,19 @@ nodelet_generate_messages_lisp/fast:
 .PHONY : nodelet_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named test_tf_node
+
+# Build rule for target.
+test_tf_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_tf_node
+.PHONY : test_tf_node
+
+# fast build rule for target.
+test_tf_node/fast:
+	$(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/build
+.PHONY : test_tf_node/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -1367,6 +1380,7 @@ help:
 	@echo "... bond_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_lisp"
+	@echo "... test_tf_node"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... pcl_ros_gencfg"

@@ -71,6 +71,7 @@
         "string_view": "cpp",
         "variant": "cpp",
         "csignal": "cpp",
-        "any": "cpp"
+        "any": "cpp",
+        "geometry": "cpp"
     }
 }

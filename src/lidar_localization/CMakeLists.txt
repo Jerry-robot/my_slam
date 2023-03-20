@@ -90,4 +90,6 @@ list(REMOVE_ITEM ALL_SRCS ${NODE_SRCS})
 list(REMOVE_ITEM ALL_SRCS ${THIRD_PARTY_SRCS})
 
 add_executable(test_frame_node src/test_frame_node.cpp ${ALL_SRCS})
+add_executable(test_tf_node src/test_tf_node.cpp ${ALL_SRCS})
 target_link_libraries(test_frame_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
+target_link_libraries(test_tf_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})
