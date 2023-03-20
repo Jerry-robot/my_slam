@@ -16,7 +16,7 @@
 #include <string>
 
 namespace lidar_localization {
-const std::string WORK_SPACE_PATH = "/home/gjw/my_slam/src/lidar_localization/src";
+const std::string WORK_SPACE_PATH = "/home/gjw/my_slam/src/lidar_localization";
 }
 
 #endif

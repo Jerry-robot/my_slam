@@ -23,12 +23,12 @@ OdometryPublisher::OdometryPublisher(ros::NodeHandle& nh,
     odometry_.child_frame_id = child_frame_id;
 }
 
-void OdometryPublisher::PubLish(const Eigen::Matrix4f& transform_matrix) {
+void OdometryPublisher::Publish(const Eigen::Matrix4f& transform_matrix) {
     odometry_.header.stamp = ros::Time::now();
 
     odometry_.pose.pose.position.x = transform_matrix(0, 3);
-    odometry_.pose.pose.position.x = transform_matrix(1, 3);
-    odometry_.pose.pose.position.x = transform_matrix(2, 3);
+    odometry_.pose.pose.position.y = transform_matrix(1, 3);
+    odometry_.pose.pose.position.z = transform_matrix(2, 3);
 
     Eigen::Quaternionf q;
     q = transform_matrix.block<3, 3>(0, 0);

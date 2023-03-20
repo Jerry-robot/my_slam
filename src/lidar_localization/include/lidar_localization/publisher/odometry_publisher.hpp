@@ -29,7 +29,7 @@ class OdometryPublisher {
                       int buff_size);
     OdometryPublisher() = default;
 
-    void PubLish(const Eigen::Matrix4f& transform_matrix);
+    void Publish(const Eigen::Matrix4f& transform_matrix);
 
    private:
     ros::NodeHandle nh_;

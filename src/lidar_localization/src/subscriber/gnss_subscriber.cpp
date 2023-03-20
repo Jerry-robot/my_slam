@@ -44,7 +44,7 @@ void GNSSSubscriber::ParseData(std::deque<GNSSData> &gnss_data_buff) {
     {
         gnss_data_buff.insert(gnss_data_buff.end(), new_gnss_data_.begin(), new_gnss_data_.end());
         new_gnss_data_.clear();
-        std::cout<<"gnss_data_buff size:"<<gnss_data_buff.size()<<std::endl;
+        // std::cout<<"gnss_data_buff size:"<<gnss_data_buff.size()<<std::endl;
 
     }
 }

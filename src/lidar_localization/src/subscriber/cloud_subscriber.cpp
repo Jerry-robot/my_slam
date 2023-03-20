@@ -30,7 +30,7 @@ void CloudSubscriber::ParseData(std::deque<CloudData>& cloud_data_buff) {
     if(new_cloud_data_.size()){
         cloud_data_buff.insert(cloud_data_buff.end(), new_cloud_data_.begin(), new_cloud_data_.end());
         new_cloud_data_.clear();
-        std::cout<<"cloud_data_buff size:"<<cloud_data_buff.size()<<std::endl;
+        // std::cout<<"cloud_data_buff size:"<<cloud_data_buff.size()<<std::endl;
 
     }
 }

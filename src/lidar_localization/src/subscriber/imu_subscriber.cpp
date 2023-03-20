@@ -42,7 +42,7 @@ void IMUSubscriber::ParseData(std::deque<IMUData>& imu_data_buff) {
     if (new_imu_data_.size() > 0) {
         imu_data_buff.insert(imu_data_buff.end(), new_imu_data_.begin(), new_imu_data_.end());
         new_imu_data_.clear();
-        std::cout<<"imu_data_buff size:"<<imu_data_buff.size()<<std::endl;
+        // std::cout<<"imu_data_buff size:"<<imu_data_buff.size()<<std::endl;
     }
 }
 

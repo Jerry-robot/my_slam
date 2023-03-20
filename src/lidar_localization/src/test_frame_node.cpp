@@ -29,6 +29,7 @@ int main(int argc, char* argv[]) {
     FLAGS_log_dir = WORK_SPACE_PATH + "/log";
     FLAGS_alsologtostderr = 1;
 
+    setlocale(LC_ALL, "");
     ros::init(argc, argv, "test_frame_node");
     ros::NodeHandle nh;
 
@@ -38,7 +39,7 @@ int main(int argc, char* argv[]) {
     std::shared_ptr<GNSSSubscriber> gnss_sub_ptr = std::make_shared<GNSSSubscriber>(nh, "/kitti/oxts/gps/fix", 1000000);
     std::shared_ptr<TFListener> lidar_to_imu_ptr = std::make_shared<TFListener>(nh, "velo_link", "imu_link");
 
-    std::shared_ptr<CloudPublisher> cloud_pub_ptr = std::make_shared<CloudPublisher>(nh, "/current_sacn", 100, "/map");
+    std::shared_ptr<CloudPublisher> cloud_pub_ptr = std::make_shared<CloudPublisher>(nh, "/current_scan", 100, "/map");
     std::shared_ptr<OdometryPublisher> odometry_pub_ptr =
         std::make_shared<OdometryPublisher>(nh, "lidar_odom", "/map", "/lidar", 100);
 
@@ -62,6 +63,7 @@ int main(int argc, char* argv[]) {
         if (!transform_received) {
             if (lidar_to_imu_ptr->LookupData(lidar_to_imu)) {
                 transform_received = true;
+                LOG(INFO)<<"lidar to imu transform is: "<<std::endl<<lidar_to_imu;
             }
         } else {
             while (cloud_data_buff.size() > 0 && imu_data_buff.size() > 0 && gnss_data_buff.size() > 0) {
@@ -76,6 +78,7 @@ int main(int argc, char* argv[]) {
                     imu_data_buff.pop_front();
                     gnss_data_buff.pop_front();
                 } else {
+                    // std::cout<<"process data!!!"<<std::endl;
                     cloud_data_buff.pop_front();
                     imu_data_buff.pop_front();
                     gnss_data_buff.pop_front();
@@ -98,7 +101,7 @@ int main(int argc, char* argv[]) {
                     
                     pcl::transformPointCloud(*(cloud_data.cloud_ptr), *(cloud_data.cloud_ptr), odometry_matrix);
 
-                    odometry_pub_ptr->PubLish(odometry_matrix);
+                    odometry_pub_ptr->Publish(odometry_matrix);
                     cloud_pub_ptr->Publish(cloud_data.cloud_ptr);
 
                 }
