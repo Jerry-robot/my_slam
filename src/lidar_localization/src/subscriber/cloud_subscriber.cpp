@@ -23,12 +23,15 @@ void CloudSubscriber::CloudCallback(const sensor_msgs::PointCloud2::ConstPtr& cl
     pcl::fromROSMsg(*cloud_msg_ptr, *(cloud_data.cloud_ptr));
 
     new_cloud_data_.push_back(cloud_data);
+    // std::cout<<"receive new cloud data."<<std::endl;
 }
 
 void CloudSubscriber::ParseData(std::deque<CloudData>& cloud_data_buff) {
     if(new_cloud_data_.size()){
         cloud_data_buff.insert(cloud_data_buff.end(), new_cloud_data_.begin(), new_cloud_data_.end());
         new_cloud_data_.clear();
+        std::cout<<"cloud_data_buff size:"<<cloud_data_buff.size()<<std::endl;
+
     }
 }
 }  // namespace lidar_localization

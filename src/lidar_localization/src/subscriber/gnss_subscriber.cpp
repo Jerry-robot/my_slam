@@ -30,6 +30,8 @@ void GNSSSubscriber::GNSSCallback(const sensor_msgs::NavSatFixConstPtr& nav_sat_
     gnss_data.service = nav_sat_fix_ptr->status.service;
 
     new_gnss_data_.push_back(gnss_data);
+    // std::cout<<"receive new gnss data."<<std::endl;
+
 }
 
 /**
@@ -42,6 +44,8 @@ void GNSSSubscriber::ParseData(std::deque<GNSSData> &gnss_data_buff) {
     {
         gnss_data_buff.insert(gnss_data_buff.end(), new_gnss_data_.begin(), new_gnss_data_.end());
         new_gnss_data_.clear();
+        std::cout<<"gnss_data_buff size:"<<gnss_data_buff.size()<<std::endl;
+
     }
 }
 

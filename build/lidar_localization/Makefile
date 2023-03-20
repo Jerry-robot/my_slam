@@ -1379,6 +1379,33 @@ src/publisher/cloud_publisher.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.s
 .PHONY : src/publisher/cloud_publisher.cpp.s
 
+src/publisher/odometry_publisher.o: src/publisher/odometry_publisher.cpp.o
+
+.PHONY : src/publisher/odometry_publisher.o
+
+# target to build an object file
+src/publisher/odometry_publisher.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o
+.PHONY : src/publisher/odometry_publisher.cpp.o
+
+src/publisher/odometry_publisher.i: src/publisher/odometry_publisher.cpp.i
+
+.PHONY : src/publisher/odometry_publisher.i
+
+# target to preprocess a source file
+src/publisher/odometry_publisher.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.i
+.PHONY : src/publisher/odometry_publisher.cpp.i
+
+src/publisher/odometry_publisher.s: src/publisher/odometry_publisher.cpp.s
+
+.PHONY : src/publisher/odometry_publisher.s
+
+# target to generate assembly for a file
+src/publisher/odometry_publisher.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.s
+.PHONY : src/publisher/odometry_publisher.cpp.s
+
 src/sensor_data/gnss_data.o: src/sensor_data/gnss_data.cpp.o
 
 .PHONY : src/sensor_data/gnss_data.o
@@ -1636,6 +1663,9 @@ help:
 	@echo "... src/publisher/cloud_publisher.o"
 	@echo "... src/publisher/cloud_publisher.i"
 	@echo "... src/publisher/cloud_publisher.s"
+	@echo "... src/publisher/odometry_publisher.o"
+	@echo "... src/publisher/odometry_publisher.i"
+	@echo "... src/publisher/odometry_publisher.s"
 	@echo "... src/sensor_data/gnss_data.o"
 	@echo "... src/sensor_data/gnss_data.i"
 	@echo "... src/sensor_data/gnss_data.s"

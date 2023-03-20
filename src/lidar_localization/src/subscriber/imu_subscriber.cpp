@@ -34,13 +34,15 @@ void IMUSubscriber::msg_callback(const sensor_msgs::ImuConstPtr& imu_msg_ptr) {
     imu_data.orientation.z = imu_msg_ptr->orientation.z;
 
     new_imu_data_.push_back(imu_data);
+    // std::cout<<"receive new imu data."<<std::endl;
+
 }
 
 void IMUSubscriber::ParseData(std::deque<IMUData>& imu_data_buff) {
     if (new_imu_data_.size() > 0) {
-        std::cout<<"new_imu_data_ size:"<<new_imu_data_.size()<<std::endl;
         imu_data_buff.insert(imu_data_buff.end(), new_imu_data_.begin(), new_imu_data_.end());
         new_imu_data_.clear();
+        std::cout<<"imu_data_buff size:"<<imu_data_buff.size()<<std::endl;
     }
 }
 
