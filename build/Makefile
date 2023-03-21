@@ -493,6 +493,19 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named front_end_node
+
+# Build rule for target.
+front_end_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 front_end_node
+.PHONY : front_end_node
+
+# fast build rule for target.
+front_end_node/fast:
+	$(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/build
+.PHONY : front_end_node/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -1375,6 +1388,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... front_end_node"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... bond_generate_messages_eus"

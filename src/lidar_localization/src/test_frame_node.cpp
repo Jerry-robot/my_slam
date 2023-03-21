@@ -9,8 +9,8 @@
  *
  */
 
-#include <ros/ros.h>
 #include <pcl_ros/transforms.h>
+#include <ros/ros.h>
 #include "glog/logging.h"
 
 #include "lidar_localization/global_defination/global_defination.h.in"
@@ -24,7 +24,6 @@
 
 using namespace lidar_localization;
 
-
 int main(int argc, char* argv[]) {
     setlocale(LC_ALL, "");
     google::InitGoogleLogging(argv[0]);
@@ -36,7 +35,7 @@ int main(int argc, char* argv[]) {
 
     std::shared_ptr<IMUSubscriber> imu_sub_ptr = std::make_shared<IMUSubscriber>(nh, "/kitti/oxts/imu", 1000000);
     std::shared_ptr<CloudSubscriber> cloud_sub_ptr =
-        std::make_shared<CloudSubscriber>(nh, "/kitti/velo/pointcloud", 1000000);
+        std::make_shared<CloudSubscriber>(nh, "/kitti/velo/pointcloud", 10000);
     std::shared_ptr<GNSSSubscriber> gnss_sub_ptr = std::make_shared<GNSSSubscriber>(nh, "/kitti/oxts/gps/fix", 1000000);
     std::shared_ptr<TFListener> lidar_to_imu_ptr = std::make_shared<TFListener>(nh, "imu_link", "velo_link");
     std::shared_ptr<CloudPublisher> cloud_pub_ptr = std::make_shared<CloudPublisher>(nh, "/current_scan", 100, "/map");
@@ -64,7 +63,7 @@ int main(int argc, char* argv[]) {
             // base:"velo_link", child: "imu_link"
             if (lidar_to_imu_ptr->LookupData(lidar_to_imu)) {
                 transform_received = true;
-                LOG(INFO)<<"lidar to imu transform matrix is:"<<std::endl<<lidar_to_imu;
+                LOG(INFO) << "lidar to imu transform matrix is:" << std::endl << lidar_to_imu;
             }
         } else {
             while (cloud_data_buff.size() > 0 && imu_data_buff.size() > 0 && gnss_data_buff.size() > 0) {
@@ -83,8 +82,7 @@ int main(int argc, char* argv[]) {
                     imu_data_buff.pop_front();
                     gnss_data_buff.pop_front();
 
-                    if(!gnss_origin_position_inited)
-                    {
+                    if (!gnss_origin_position_inited) {
                         gnss_data.InitOriginPosition();
                         gnss_origin_position_inited = true;
                     }
@@ -96,38 +94,31 @@ int main(int argc, char* argv[]) {
                     odometry_matrix(1, 3) = gnss_data.local_N;
                     odometry_matrix(2, 3) = gnss_data.local_U;
                     // 当前odometry_matrixwi 为imu_Link在世界坐标系中位姿
-                    odometry_matrix.block<3,3>(0,0) = imu_data.GetOrientationMatrix();
+                    odometry_matrix.block<3, 3>(0, 0) = imu_data.GetOrientationMatrix();
 
                     // Eigen::Vector3f eulerAngle1=odometry_matrix.block<3,3>(0,0).eulerAngles(0,1,2);
-                    Eigen::Vector3f eulerAngle2=lidar_to_imu.block<3,3>(0,0).eulerAngles(0,1,2);
+                    Eigen::Vector3f eulerAngle2 = lidar_to_imu.block<3, 3>(0, 0).eulerAngles(0, 1, 2);
                     // LOG(INFO)<<"******************************************"<<std::endl;
                     // LOG(INFO)<<"map to imu transform matrix is:"<<std::endl<<odometry_matrix;
-                    // eulerAngle1 = eulerAngle1*180/M_PI; 
-                    eulerAngle2 = eulerAngle2*180/M_PI; 
+                    // eulerAngle1 = eulerAngle1*180/M_PI;
+                    eulerAngle2 = eulerAngle2 * 180 / M_PI;
                     // LOG(INFO)<<std::endl<<eulerAngle1[0]<<" "<<eulerAngle1[1]<<" "<<eulerAngle1[2]<<std::endl;
                     // LOG(INFO)<<"lidar to imu lidar_to_imu matrix is:"<<std::endl<<lidar_to_imu;
-                    LOG(INFO)<<std::endl<<eulerAngle2[0]<<" "<<eulerAngle2[1]<<" "<<eulerAngle2[2]<<std::endl;
-
+                    LOG(INFO) << std::endl
+                              << eulerAngle2[0] << " " << eulerAngle2[1] << " " << eulerAngle2[2] << std::endl;
 
                     odometry_matrix *= lidar_to_imu;
-                    
+
                     pcl::transformPointCloud(*(cloud_data.cloud_ptr), *(cloud_data.cloud_ptr), odometry_matrix);
 
                     odometry_pub_ptr->Publish(odometry_matrix);
                     cloud_pub_ptr->Publish(cloud_data.cloud_ptr);
-
                 }
             }
         }
 
         rate.sleep();
     }
-
-
-
-
-
-
 
     return 0;
 }
