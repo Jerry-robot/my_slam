@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o"
   "CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o"
+  "CMakeFiles/test_frame_node.dir/src/front_end/front_end_flow.cpp.o"
+  "CMakeFiles/test_frame_node.dir/src/models/cloud_filter/voxel_filter.cpp.o"
+  "CMakeFiles/test_frame_node.dir/src/models/registration/ndt_registration.cpp.o"
   "CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o"
   "CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o"
   "CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o"

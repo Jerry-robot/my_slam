@@ -133,7 +133,8 @@ int main(int argc, char* argv[]) {
                     }
                     front_end_ptr->SetPredictPose(odomery_matrix);
 
-                    Eigen::Matrix4f laser_matrix = front_end_ptr->Update(cloud_data);
+                    Eigen::Matrix4f laser_matrix;
+                    front_end_ptr->Update(cloud_data, laser_matrix);
                     lidar_odom_pub_ptr->Publish(laser_matrix);
 
                     front_end_ptr->GetCurrentScan(current_scan_ptr);

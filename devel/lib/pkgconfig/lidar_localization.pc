@@ -3,6 +3,6 @@ prefix=/home/gjw/my_slam/devel
 Name: lidar_localization
 Description: Description of lidar_localization
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/gjw/my_slam/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

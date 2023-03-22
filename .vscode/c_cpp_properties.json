@@ -10,9 +10,11 @@
                 "/opt/ros/melodic/include/**",
                 "/usr/include/**",
                 "${workspaceFolder}/src/lidar_localization/include",
+                "${workspaceFolder}/devel/include/lidar_localization",
                 "/usr/include/c++/7",
                 "/usr/include/x86_64-linux-gnu/c++/7",
-                "${workspaceFolder}/src/lidar_localization/third_party/GeographicLib/include"
+                "${workspaceFolder}/src/lidar_localization/third_party/GeographicLib/include",
+                "${workspaceFolder}/devel/include"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

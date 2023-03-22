@@ -30,6 +30,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/gjw/my_slam/devel/include"
   "/usr/include/vtk-6.3"
   "/usr/include/freetype2"
   "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
