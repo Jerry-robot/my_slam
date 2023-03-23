@@ -37,13 +37,13 @@ bool FrontEndFlow::Run() {
     // LOG(INFO) << "开始运行程序！";
     ReadData();
     if (!InitCalibration()) {
+        // LOG(INFO) << "标定IMU";
         return false;
     }
-    // LOG(INFO) << "成功构造 标定IMU";
     if (!InitGNSS()) {
+        // LOG(INFO) << "初始化 GNSS";
         return false;
     }
-    // LOG(INFO) << "初始化 GNSS";
 
     while (HasData()) {
         if (!IsValidData())
@@ -67,9 +67,31 @@ bool FrontEndFlow::Run() {
  * @return false
  */
 bool FrontEndFlow::ReadData() {
-    imu_sub_ptr_->ParseData(imu_data_buff_);
-    gnss_sub_ptr_->ParseData(gnss_data_buff_);
     cloud_sub_ptr_->ParseData(cloud_data_buff_);
+
+    static std::deque<IMUData> unsynced_imu_;
+    static std::deque<GNSSData> unsynced_gnss_;
+
+    imu_sub_ptr_->ParseData(unsynced_imu_);
+    gnss_sub_ptr_->ParseData(unsynced_gnss_);
+
+    if (cloud_data_buff_.size() == 0)
+        return false;
+
+    double cloud_time = cloud_data_buff_.front().time;
+
+    bool valid_imu = IMUData::SyncData(unsynced_imu_, imu_data_buff_, cloud_time);
+    bool valid_gnss = GNSSData::SyncData(unsynced_gnss_, gnss_data_buff_, cloud_time);
+
+    static bool sensor_inited = false;
+    if (!sensor_inited) {
+        if (!valid_imu || !valid_gnss) {
+            cloud_data_buff_.pop_front();
+            return false;
+        }
+        sensor_inited = true;
+    }
+
     return true;
 }
 /**
@@ -83,11 +105,9 @@ bool FrontEndFlow::InitCalibration() {
     if (!has_init_transform) {
         if (imu_to_lidar_sub_ptr_->LookupData(imu_to_lidar_)) {
             has_init_transform = true;
-            return true;
         }
-        return false;
     }
-    return true;
+    return has_init_transform;
 }
 /**
  * @brief 初始化GPS, 用第一帧当做初始位置
@@ -157,10 +177,10 @@ bool FrontEndFlow::UpdateGNSSOdometry() {
     gnss_odometry_ = Eigen::Matrix4f::Identity();
 
     current_gnss_data_.UpdateXYZ();
-    gnss_odometry_(0,3) = current_gnss_data_.local_E;
-    gnss_odometry_(1,3) = current_gnss_data_.local_N;
-    gnss_odometry_(2,3) = current_gnss_data_.local_U;
-    gnss_odometry_.block<3,3>(0,0) = current_imu_data_.GetOrientationMatrix();
+    gnss_odometry_(0, 3) = current_gnss_data_.local_E;
+    gnss_odometry_(1, 3) = current_gnss_data_.local_N;
+    gnss_odometry_(2, 3) = current_gnss_data_.local_U;
+    gnss_odometry_.block<3, 3>(0, 0) = current_imu_data_.GetOrientationMatrix();
     gnss_odometry_ *= imu_to_lidar_;
 
     return true;

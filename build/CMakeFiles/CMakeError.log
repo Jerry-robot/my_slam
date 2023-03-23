@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/gjw/my_slam/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5edd8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5edd8.dir/build.make CMakeFiles/cmTC_5edd8.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b2137/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2137.dir/build.make CMakeFiles/cmTC_b2137.dir/build
 make[1]: 进入目录“/home/gjw/my_slam/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_5edd8.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_5edd8.dir/CheckSymbolExists.c.o   -c /home/gjw/my_slam/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_5edd8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5edd8.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5edd8.dir/CheckSymbolExists.c.o  -o cmTC_5edd8 
-CMakeFiles/cmTC_5edd8.dir/CheckSymbolExists.c.o：在函数‘main’中：
+Building C object CMakeFiles/cmTC_b2137.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b2137.dir/CheckSymbolExists.c.o   -c /home/gjw/my_slam/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b2137
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2137.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b2137.dir/CheckSymbolExists.c.o  -o cmTC_b2137 
+CMakeFiles/cmTC_b2137.dir/CheckSymbolExists.c.o：在函数‘main’中：
 CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_5edd8.dir/build.make:97: recipe for target 'cmTC_5edd8' failed
-make[1]: *** [cmTC_5edd8] Error 1
+CMakeFiles/cmTC_b2137.dir/build.make:97: recipe for target 'cmTC_b2137' failed
+make[1]: *** [cmTC_b2137] Error 1
 make[1]: 离开目录“/home/gjw/my_slam/build/CMakeFiles/CMakeTmp”
-Makefile:126: recipe for target 'cmTC_5edd8/fast' failed
-make: *** [cmTC_5edd8/fast] Error 2
+Makefile:126: recipe for target 'cmTC_b2137/fast' failed
+make: *** [cmTC_b2137/fast] Error 2
 
 File /home/gjw/my_slam/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/gjw/my_slam/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c2158/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c2158.dir/build.make CMakeFiles/cmTC_c2158.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_914ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_914ef.dir/build.make CMakeFiles/cmTC_914ef.dir/build
 make[1]: 进入目录“/home/gjw/my_slam/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_c2158.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c2158.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c2158
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2158.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c2158.dir/CheckFunctionExists.c.o  -o cmTC_c2158 -lpthreads 
+Building C object CMakeFiles/cmTC_914ef.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_914ef.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_914ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_914ef.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_914ef.dir/CheckFunctionExists.c.o  -o cmTC_914ef -lpthreads 
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c2158.dir/build.make:97: recipe for target 'cmTC_c2158' failed
-make[1]: *** [cmTC_c2158] Error 1
+CMakeFiles/cmTC_914ef.dir/build.make:97: recipe for target 'cmTC_914ef' failed
+make[1]: *** [cmTC_914ef] Error 1
 make[1]: 离开目录“/home/gjw/my_slam/build/CMakeFiles/CMakeTmp”
-Makefile:126: recipe for target 'cmTC_c2158/fast' failed
-make: *** [cmTC_c2158/fast] Error 2
+Makefile:126: recipe for target 'cmTC_914ef/fast' failed
+make: *** [cmTC_914ef/fast] Error 2
 
 

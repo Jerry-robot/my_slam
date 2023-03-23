@@ -1820,6 +1820,39 @@ src/sensor_data/gnss_data.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/gnss_data.cpp.s
 .PHONY : src/sensor_data/gnss_data.cpp.s
 
+src/sensor_data/imu_data.o: src/sensor_data/imu_data.cpp.o
+
+.PHONY : src/sensor_data/imu_data.o
+
+# target to build an object file
+src/sensor_data/imu_data.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/sensor_data/imu_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/imu_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/imu_data.cpp.o
+.PHONY : src/sensor_data/imu_data.cpp.o
+
+src/sensor_data/imu_data.i: src/sensor_data/imu_data.cpp.i
+
+.PHONY : src/sensor_data/imu_data.i
+
+# target to preprocess a source file
+src/sensor_data/imu_data.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/sensor_data/imu_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/imu_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/imu_data.cpp.i
+.PHONY : src/sensor_data/imu_data.cpp.i
+
+src/sensor_data/imu_data.s: src/sensor_data/imu_data.cpp.s
+
+.PHONY : src/sensor_data/imu_data.s
+
+# target to generate assembly for a file
+src/sensor_data/imu_data.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/sensor_data/imu_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/imu_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/imu_data.cpp.s
+.PHONY : src/sensor_data/imu_data.cpp.s
+
 src/subscriber/cloud_subscriber.o: src/subscriber/cloud_subscriber.cpp.o
 
 .PHONY : src/subscriber/cloud_subscriber.o
@@ -2136,6 +2169,9 @@ help:
 	@echo "... src/sensor_data/gnss_data.o"
 	@echo "... src/sensor_data/gnss_data.i"
 	@echo "... src/sensor_data/gnss_data.s"
+	@echo "... src/sensor_data/imu_data.o"
+	@echo "... src/sensor_data/imu_data.i"
+	@echo "... src/sensor_data/imu_data.s"
 	@echo "... src/subscriber/cloud_subscriber.o"
 	@echo "... src/subscriber/cloud_subscriber.i"
 	@echo "... src/subscriber/cloud_subscriber.s"

@@ -14,7 +14,7 @@
 
 #include <vector>
 #include <string>
-
+#include <deque>
 #include "Geocentric/LocalCartesian.hpp"
 
 using std::vector;
@@ -40,6 +40,7 @@ class GNSSData {
   public: 
     void InitOriginPosition();
     void UpdateXYZ();
+    static bool SyncData(std::deque<GNSSData>& unsync_gnss, std::deque<GNSSData>& synced_gnss, double sync_time);
 };
 }
 #endif

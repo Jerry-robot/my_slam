@@ -13,6 +13,8 @@
 #define LIDAR_LOCALIZATIOIN_SENSOR_DATA_IMU_DATA_HPP_
 
 #include <Eigen/Dense>
+#include <cmath>
+#include <deque>
 
 namespace lidar_localization {
 class IMUData {
@@ -29,10 +31,20 @@ class IMUData {
         double z = 0.0;
     };
     struct Orientation {
+       public:
         double x = 0.0;
         double y = 0.0;
         double z = 0.0;
         double w = 0.0;
+
+       public:
+        void Normlize() {
+            double norm = sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2) + pow(w, 2));
+            x /= norm;
+            y /= norm;
+            z /= norm;
+            w /= norm;
+        }
     };
 
     double time = 0.0;
@@ -41,11 +53,8 @@ class IMUData {
     Orientation orientation;
 
    public:
-    Eigen::Matrix3f GetOrientationMatrix() {
-        Eigen::Quaterniond q(orientation.w, orientation.x, orientation.y, orientation.z);
-        Eigen::Matrix3f matrix = q.matrix().cast<float>();
-        return matrix;
-    }
+    Eigen::Matrix3f GetOrientationMatrix();
+    static bool SyncData(std::deque<IMUData>& unsynced_imu, std::deque<IMUData>& sync_imu, double cloud_time);
 };
 
 }  // namespace lidar_localization

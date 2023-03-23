@@ -1,0 +1,487 @@
+Log file created at: 2023/03/23 14:32:15
+Running on machine: gjw-cpu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0323 14:32:15.247444  7745 front_end.cpp:80] 地图点云存放地址：/home/gjw/my_slam/src/lidar_localization/slam_data
+I0323 14:32:15.247587  7745 front_end.cpp:89] 关键帧点云存放地址为：/home/gjw/my_slam/src/lidar_localization/slam_data/key_frames
+I0323 14:32:15.247596  7745 front_end.cpp:108] frame 选择的滤波方法为: voxel_filter
+I0323 14:32:15.247607  7745 voxel_filter.cpp:30] Voxel Filter 的参数为：
+1.3, 1.3, 1.3
+
+I0323 14:32:15.247622  7745 front_end.cpp:108] local_map 选择的滤波方法为: voxel_filter
+I0323 14:32:15.247629  7745 voxel_filter.cpp:30] Voxel Filter 的参数为：
+0.6, 0.6, 0.6
+
+I0323 14:32:15.247637  7745 front_end.cpp:108] display 选择的滤波方法为: voxel_filter
+I0323 14:32:15.247644  7745 voxel_filter.cpp:30] Voxel Filter 的参数为：
+0.5, 0.5, 0.5
+
+I0323 14:32:15.247650  7745 front_end.cpp:130] 选择的点云匹配方法为：NDT
+I0323 14:32:15.247681  7745 ndt_registration.cpp:34] NDT 的参数配置为：
+res: 1
+step_size: 0.1
+trans_eps: 0.01
+max_iter: 30
+
+I0323 14:32:15.247792  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.257820  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.267824  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.277819  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.287822  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.297830  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.307798  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.317871  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.327801  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.337826  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.347812  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.357823  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.367813  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.377811  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.387813  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.397811  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.407814  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.417820  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.427811  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.437819  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.447819  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.457811  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.467818  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.477785  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.487814  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.497925  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.507791  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.517818  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.527803  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.537808  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.547808  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.557808  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.567785  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.577807  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.587832  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.601095  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.607812  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.617811  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.627810  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.637781  7745 front_end_flow.cpp:40] 标定IMU
+I0323 14:32:15.647843  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.657799  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.667800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.677798  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.687795  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.697798  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.707794  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.717797  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.727798  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.737802  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.747795  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.757798  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.767797  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.777796  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.787802  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.800580  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.807796  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.817796  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.827800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.837805  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.847813  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.857811  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.867770  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.877794  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.887826  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.897802  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.907804  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.917798  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.927803  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.937805  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.947808  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.957772  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.967768  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.977806  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.987797  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:15.997800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.010645  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.017793  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.027805  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.037797  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.047814  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.057807  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.067800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.077800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.087795  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.097784  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.107759  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.117795  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.127794  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.137795  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.147773  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.157802  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.167805  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.177799  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.187803  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.197804  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.207803  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.220579  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.227800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.237800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.247815  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.257799  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.267797  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.277797  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.287797  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.297796  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.307799  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.317798  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.327801  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.337796  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.347786  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.357800  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.367771  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.377796  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.387774  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.397774  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.407792  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.420943  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.427798  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.437777  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.447815  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.457805  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.467811  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.477805  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.487846  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.497812  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.507840  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.517773  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.527854  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.537811  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.547802  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.557946  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.567809  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.577850  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.587807  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.597811  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.607807  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.617810  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.630846  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.637807  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.647907  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.657856  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.667842  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.677852  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.687839  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.697820  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.707953  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.717875  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.727952  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.737819  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.747809  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.757970  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.767856  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.777824  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.787853  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.797853  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.807965  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.817845  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.827862  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.853060  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.853158  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.857863  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.867864  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.877817  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.887813  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.897807  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.907842  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.917850  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.927855  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.937855  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.947854  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.957949  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.967818  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.977816  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.987807  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:16.997848  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:17.007805  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:17.017845  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:17.027961  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:17.037855  7745 front_end_flow.cpp:44] 初始化 GNSS
+I0323 14:32:17.058820  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:17.058866  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:17.267848  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:17.308925  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:17.467080  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:17.588541  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:17.883975  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:17.965155  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:17.975333  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:18.045344  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:18.087682  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:18.149610  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:18.305369  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:18.400282  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:18.506621  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:18.593827  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:18.708346  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:18.856578  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:18.927573  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:19.018152  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:19.126178  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:19.299948  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:19.326788  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:19.420059  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:19.542043  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:19.736014  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:19.768940  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:19.863646  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:19.965252  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:20.145934  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:20.182972  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:20.282256  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:20.364828  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:20.598830  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:20.641976  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:20.759719  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:20.807744  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:21.034008  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:21.081773  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:21.515595  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:21.567442  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:21.594599  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:21.646953  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:21.738323  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:21.826722  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:21.844760  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:21.902525  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:22.008663  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:22.070298  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:22.092679  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:22.243094  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:22.386036  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:22.455524  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:22.479146  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:22.647913  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:22.793395  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:22.866992  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:22.885208  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:23.066222  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:23.224658  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:23.317302  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:23.335430  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:23.482513  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:23.643514  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:23.726903  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:23.747103  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:24.107977  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:24.261950  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:24.348235  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:24.367055  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:24.450742  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:24.589025  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:24.679349  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:24.702001  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:24.797219  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:24.967198  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:25.064690  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:25.092671  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:25.188369  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:25.341851  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:25.445103  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:25.464785  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:25.578241  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:25.736526  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:25.839800  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:25.864411  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:25.970674  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:26.124792  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:26.237267  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:26.257118  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:26.387413  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:26.558050  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:26.659492  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:26.679216  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:26.807595  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:26.999629  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:27.104661  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:27.123625  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:27.222992  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:27.378198  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:27.478590  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:27.500162  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:27.623162  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:27.784855  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:28.047170  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:28.111419  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:28.214542  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:28.365716  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:28.468127  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:28.485558  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:28.583681  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:28.739111  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:28.837828  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:28.855027  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:28.955173  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:29.127789  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:29.231207  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:29.248371  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:29.347254  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:29.495590  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:29.596410  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:29.623732  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:29.733837  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:29.877681  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:29.978734  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:30.003182  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:30.122316  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:30.140642  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:30.319208  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:30.469995  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:30.570735  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:30.592016  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:30.741523  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:30.766487  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:30.945699  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:31.134578  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:31.236934  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:31.259186  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:31.368144  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:31.388267  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:31.567960  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:31.753016  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:31.983655  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:32.041285  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:32.139895  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:32.169647  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:32.268515  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:32.426852  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:32.527619  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:32.551630  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:32.650172  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:32.675318  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:32.803232  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:32.943428  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:33.043905  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:33.074059  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:33.223177  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:33.241427  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:33.440189  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:33.637943  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:33.738166  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:33.773644  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:33.873081  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:33.892086  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:34.060873  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:34.113454  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:34.262382  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:34.450119  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:34.690074  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:34.745819  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:34.844430  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:34.869065  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:34.969285  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:35.018911  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:35.119326  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:35.286276  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:35.390691  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:35.425190  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:35.726105  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:35.779096  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:35.881558  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:35.902231  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:36.005571  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:36.168799  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:36.270560  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:36.300521  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:36.401999  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:36.422776  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:36.544507  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:36.570775  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:36.760735  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:36.802093  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:36.964612  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:37.137378  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:37.244242  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:37.268522  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:37.381600  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:37.413250  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:37.587080  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:37.641506  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:37.804136  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:37.858052  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:38.001771  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:38.191478  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:38.296977  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:38.333420  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:38.436914  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:38.462567  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:38.623436  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:38.664875  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:38.826823  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:38.861554  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:39.042927  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:39.217932  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:39.323253  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:39.351222  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:39.454499  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:39.478296  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:39.662277  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:39.713901  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:39.866442  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:40.032402  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:40.287974  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:40.316875  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:40.416395  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:40.437695  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:40.538993  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:40.563194  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:40.705010  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:40.852012  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:40.956671  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:40.979367  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:41.102871  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:41.134291  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:41.326829  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:41.515769  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:41.618072  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:41.640978  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:41.746050  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:41.764952  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:41.939415  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:42.114791  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:42.222882  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:42.241535  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:42.559279  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:42.611218  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:42.718008  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:42.880200  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:42.990584  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:43.040482  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:43.147243  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:43.161540  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:43.264021  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:43.428282  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:43.532389  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:43.554236  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:43.656374  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:43.848114  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:43.950394  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:43.972256  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:44.073551  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:44.226512  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:44.331631  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:44.354058  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:44.489666  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:44.654892  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:44.758448  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:44.779982  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:44.882632  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:45.039821  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:45.182125  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:45.199616  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:45.305162  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:45.463788  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:45.569097  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:45.587060  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:45.706854  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:45.878809  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:45.989051  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:46.010113  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:46.120057  7745 front_end_flow.cpp:53] 成功更新 GNSS Odometry
+I0323 14:32:46.293840  7745 front_end_flow.cpp:55] 更新 Laser Odometry
+I0323 14:32:46.802438  7745 front_end_flow_node.cpp:49] 删除所有关键帧!

@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_tf_node.dir/src/publisher/cloud_publisher.cpp.o"
   "CMakeFiles/test_tf_node.dir/src/publisher/odometry_publisher.cpp.o"
   "CMakeFiles/test_tf_node.dir/src/sensor_data/gnss_data.cpp.o"
+  "CMakeFiles/test_tf_node.dir/src/sensor_data/imu_data.cpp.o"
   "CMakeFiles/test_tf_node.dir/src/subscriber/cloud_subscriber.cpp.o"
   "CMakeFiles/test_tf_node.dir/src/subscriber/gnss_subscriber.cpp.o"
   "CMakeFiles/test_tf_node.dir/src/subscriber/imu_subscriber.cpp.o"
