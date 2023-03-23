@@ -54,6 +54,7 @@ bool FrontEndFlow::Run() {
         if (UpdateLaserOdometry()) {
             // LOG(INFO) << "更新 Laser Odometry";
             PublishData();
+            SaveTrajectory();
         }
     }
 
@@ -94,6 +95,7 @@ bool FrontEndFlow::ReadData() {
 
     return true;
 }
+
 /**
  * @brief 判断是否已经获取 imu to lidar 的坐标变化
  *
@@ -109,6 +111,7 @@ bool FrontEndFlow::InitCalibration() {
     }
     return has_init_transform;
 }
+
 /**
  * @brief 初始化GPS, 用第一帧当做初始位置
  *
@@ -140,6 +143,7 @@ bool FrontEndFlow::HasData() {
         return false;
     return true;
 }
+
 /**
  * @brief 去除时间对不上的数据
  *
@@ -167,6 +171,7 @@ bool FrontEndFlow::IsValidData() {
     cloud_data_buff_.pop_front();
     return true;
 }
+
 /**
  * @brief 更新里程计数据，获取map to lidar 的位姿变化作为里程计数据
  *
@@ -248,6 +253,50 @@ bool FrontEndFlow::PublishGlobalMap() {
         return true;
     }
     return false;
+}
+
+/**
+ * @brief 保存里程计数据到文件中
+ *
+ * @return true
+ * @return false
+ */
+bool FrontEndFlow::SaveTrajectory() {
+    static std::ofstream ground_truth, laser_odom;
+    static bool is_file_created = false;
+
+    if (!is_file_created) {
+        std::string data_path = WORK_SPACE_PATH + "/slam_data/trajectory";
+        if (!FileManager::CreateDirtectory(data_path))
+            return false;
+        std::string file_gnss_path = data_path + "/gnss_odometry.txt";
+        if (!FileManager::CreateFile(ground_truth, file_gnss_path)) {
+            return false;
+        }
+        LOG(INFO) << "GNSS 里程计保存地址为: " << file_gnss_path;
+
+        std::string file_laser_path = data_path + "/laser_odometry.txt";
+        if (!FileManager::CreateFile(laser_odom, file_laser_path)) {
+            return false;
+        }
+        LOG(INFO) << "Laser 里程计保存地址为: " << file_laser_path;
+        is_file_created = true;
+    }
+
+    for (size_t i = 0; i < 3; ++i) {
+        for (size_t j = 0; j < 4; ++j) {
+            ground_truth << gnss_odometry_(i, j);
+            laser_odom << laser_odometry_(i, j);
+            if (i == 2 && j == 3) {
+                ground_truth << std::endl;
+                laser_odom << std::endl;
+            } else {
+                ground_truth << " ";
+                laser_odom << " ";
+            }
+        }
+    }
+    return true;
 }
 
 }  // namespace lidar_localization

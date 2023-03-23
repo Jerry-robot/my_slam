@@ -28,6 +28,8 @@
 
 #include "lidar_localization/front_end/front_end.hpp"
 
+#include "lidar_localization/tools/file_manager.hpp"
+
 namespace lidar_localization {
 class FrontEndFlow {
    public:
@@ -45,6 +47,7 @@ class FrontEndFlow {
     bool UpdateGNSSOdometry();
     bool UpdateLaserOdometry();
     bool PublishData();
+    bool SaveTrajectory();
 
    private:
     std::shared_ptr<IMUSubscriber> imu_sub_ptr_;
