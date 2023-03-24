@@ -73,6 +73,7 @@
         "csignal": "cpp",
         "any": "cpp",
         "geometry": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "dense": "cpp"
     }
 }

@@ -1721,6 +1721,39 @@ src/models/registration/ndt_registration.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/models/registration/ndt_registration.cpp.s
 .PHONY : src/models/registration/ndt_registration.cpp.s
 
+src/models/scan_adjust/distortion_adjust.o: src/models/scan_adjust/distortion_adjust.cpp.o
+
+.PHONY : src/models/scan_adjust/distortion_adjust.o
+
+# target to build an object file
+src/models/scan_adjust/distortion_adjust.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
+.PHONY : src/models/scan_adjust/distortion_adjust.cpp.o
+
+src/models/scan_adjust/distortion_adjust.i: src/models/scan_adjust/distortion_adjust.cpp.i
+
+.PHONY : src/models/scan_adjust/distortion_adjust.i
+
+# target to preprocess a source file
+src/models/scan_adjust/distortion_adjust.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/models/scan_adjust/distortion_adjust.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/models/scan_adjust/distortion_adjust.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/models/scan_adjust/distortion_adjust.cpp.i
+.PHONY : src/models/scan_adjust/distortion_adjust.cpp.i
+
+src/models/scan_adjust/distortion_adjust.s: src/models/scan_adjust/distortion_adjust.cpp.s
+
+.PHONY : src/models/scan_adjust/distortion_adjust.s
+
+# target to generate assembly for a file
+src/models/scan_adjust/distortion_adjust.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/models/scan_adjust/distortion_adjust.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/models/scan_adjust/distortion_adjust.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/models/scan_adjust/distortion_adjust.cpp.s
+.PHONY : src/models/scan_adjust/distortion_adjust.cpp.s
+
 src/publisher/cloud_publisher.o: src/publisher/cloud_publisher.cpp.o
 
 .PHONY : src/publisher/cloud_publisher.o
@@ -1853,6 +1886,39 @@ src/sensor_data/imu_data.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/imu_data.cpp.s
 .PHONY : src/sensor_data/imu_data.cpp.s
 
+src/sensor_data/velocity_data.o: src/sensor_data/velocity_data.cpp.o
+
+.PHONY : src/sensor_data/velocity_data.o
+
+# target to build an object file
+src/sensor_data/velocity_data.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/sensor_data/velocity_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/velocity_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/velocity_data.cpp.o
+.PHONY : src/sensor_data/velocity_data.cpp.o
+
+src/sensor_data/velocity_data.i: src/sensor_data/velocity_data.cpp.i
+
+.PHONY : src/sensor_data/velocity_data.i
+
+# target to preprocess a source file
+src/sensor_data/velocity_data.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/sensor_data/velocity_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/velocity_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/velocity_data.cpp.i
+.PHONY : src/sensor_data/velocity_data.cpp.i
+
+src/sensor_data/velocity_data.s: src/sensor_data/velocity_data.cpp.s
+
+.PHONY : src/sensor_data/velocity_data.s
+
+# target to generate assembly for a file
+src/sensor_data/velocity_data.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/sensor_data/velocity_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/sensor_data/velocity_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/sensor_data/velocity_data.cpp.s
+.PHONY : src/sensor_data/velocity_data.cpp.s
+
 src/subscriber/cloud_subscriber.o: src/subscriber/cloud_subscriber.cpp.o
 
 .PHONY : src/subscriber/cloud_subscriber.o
@@ -1952,6 +2018,39 @@ src/subscriber/imu_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/subscriber/imu_subscriber.cpp.s
 .PHONY : src/subscriber/imu_subscriber.cpp.s
 
+src/subscriber/velocity_subscriber.o: src/subscriber/velocity_subscriber.cpp.o
+
+.PHONY : src/subscriber/velocity_subscriber.o
+
+# target to build an object file
+src/subscriber/velocity_subscriber.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/subscriber/velocity_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/velocity_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/subscriber/velocity_subscriber.cpp.o
+.PHONY : src/subscriber/velocity_subscriber.cpp.o
+
+src/subscriber/velocity_subscriber.i: src/subscriber/velocity_subscriber.cpp.i
+
+.PHONY : src/subscriber/velocity_subscriber.i
+
+# target to preprocess a source file
+src/subscriber/velocity_subscriber.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/subscriber/velocity_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/velocity_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/subscriber/velocity_subscriber.cpp.i
+.PHONY : src/subscriber/velocity_subscriber.cpp.i
+
+src/subscriber/velocity_subscriber.s: src/subscriber/velocity_subscriber.cpp.s
+
+.PHONY : src/subscriber/velocity_subscriber.s
+
+# target to generate assembly for a file
+src/subscriber/velocity_subscriber.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/subscriber/velocity_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/subscriber/velocity_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/subscriber/velocity_subscriber.cpp.s
+.PHONY : src/subscriber/velocity_subscriber.cpp.s
+
 src/test_frame_node.o: src/test_frame_node.cpp.o
 
 .PHONY : src/test_frame_node.o
@@ -2038,6 +2137,39 @@ src/tf_listener/tf_listener.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tf_listener/tf_listener.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/tf_listener/tf_listener.cpp.s
 .PHONY : src/tf_listener/tf_listener.cpp.s
+
+src/tools/file_manager.o: src/tools/file_manager.cpp.o
+
+.PHONY : src/tools/file_manager.o
+
+# target to build an object file
+src/tools/file_manager.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/tools/file_manager.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tools/file_manager.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/tools/file_manager.cpp.o
+.PHONY : src/tools/file_manager.cpp.o
+
+src/tools/file_manager.i: src/tools/file_manager.cpp.i
+
+.PHONY : src/tools/file_manager.i
+
+# target to preprocess a source file
+src/tools/file_manager.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/tools/file_manager.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tools/file_manager.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/tools/file_manager.cpp.i
+.PHONY : src/tools/file_manager.cpp.i
+
+src/tools/file_manager.s: src/tools/file_manager.cpp.s
+
+.PHONY : src/tools/file_manager.s
+
+# target to generate assembly for a file
+src/tools/file_manager.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_flow_node.dir/build.make lidar_localization/CMakeFiles/front_end_flow_node.dir/src/tools/file_manager.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_frame_node.dir/build.make lidar_localization/CMakeFiles/test_frame_node.dir/src/tools/file_manager.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/test_tf_node.dir/build.make lidar_localization/CMakeFiles/test_tf_node.dir/src/tools/file_manager.cpp.s
+.PHONY : src/tools/file_manager.cpp.s
 
 # Help Target
 help:
@@ -2160,6 +2292,9 @@ help:
 	@echo "... src/models/registration/ndt_registration.o"
 	@echo "... src/models/registration/ndt_registration.i"
 	@echo "... src/models/registration/ndt_registration.s"
+	@echo "... src/models/scan_adjust/distortion_adjust.o"
+	@echo "... src/models/scan_adjust/distortion_adjust.i"
+	@echo "... src/models/scan_adjust/distortion_adjust.s"
 	@echo "... src/publisher/cloud_publisher.o"
 	@echo "... src/publisher/cloud_publisher.i"
 	@echo "... src/publisher/cloud_publisher.s"
@@ -2172,6 +2307,9 @@ help:
 	@echo "... src/sensor_data/imu_data.o"
 	@echo "... src/sensor_data/imu_data.i"
 	@echo "... src/sensor_data/imu_data.s"
+	@echo "... src/sensor_data/velocity_data.o"
+	@echo "... src/sensor_data/velocity_data.i"
+	@echo "... src/sensor_data/velocity_data.s"
 	@echo "... src/subscriber/cloud_subscriber.o"
 	@echo "... src/subscriber/cloud_subscriber.i"
 	@echo "... src/subscriber/cloud_subscriber.s"
@@ -2181,6 +2319,9 @@ help:
 	@echo "... src/subscriber/imu_subscriber.o"
 	@echo "... src/subscriber/imu_subscriber.i"
 	@echo "... src/subscriber/imu_subscriber.s"
+	@echo "... src/subscriber/velocity_subscriber.o"
+	@echo "... src/subscriber/velocity_subscriber.i"
+	@echo "... src/subscriber/velocity_subscriber.s"
 	@echo "... src/test_frame_node.o"
 	@echo "... src/test_frame_node.i"
 	@echo "... src/test_frame_node.s"
@@ -2190,6 +2331,9 @@ help:
 	@echo "... src/tf_listener/tf_listener.o"
 	@echo "... src/tf_listener/tf_listener.i"
 	@echo "... src/tf_listener/tf_listener.s"
+	@echo "... src/tools/file_manager.o"
+	@echo "... src/tools/file_manager.i"
+	@echo "... src/tools/file_manager.s"
 .PHONY : help
 
 

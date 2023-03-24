@@ -16,11 +16,14 @@ FrontEndFlow::FrontEndFlow(ros::NodeHandle& nh) {
     imu_sub_ptr_ = std::make_shared<IMUSubscriber>(nh, "/kitti/oxts/imu", 1000000);
     gnss_sub_ptr_ = std::make_shared<GNSSSubscriber>(nh, "/kitti/oxts/gps/fix", 1000000);
     cloud_sub_ptr_ = std::make_shared<CloudSubscriber>(nh, "/kitti/velo/pointcloud", 10000);
+    velocity_sub_ptr_ = std::make_shared<VelocitySubscriber>(nh, "/kitti/oxts/gps/vel", 100000);
     imu_to_lidar_sub_ptr_ = std::make_shared<TFListener>(nh, "imu_link", "velo_link");
 
     cloud_pub_ptr_ = std::make_shared<CloudPublisher>(nh, "/current_scan", 1000, "/map");
     local_cloud_pub_ptr_ = std::make_shared<CloudPublisher>(nh, "local_cloud", 1000, "map");
     global_cloud_pub_ptr_ = std::make_shared<CloudPublisher>(nh, "global_cloud", 1000, "map");
+
+    distortion_adjust_ptr_ = std::make_shared<DistortionAdjust>();
 
     lidar_odom_pub_ptr_ = std::make_shared<OdometryPublisher>(nh, "lidar_odom", "map", "lidar", 100);
     gnss_odom_pub_ptr_ = std::make_shared<OdometryPublisher>(nh, "gnss_odom", "map", "lidar", 100);
@@ -72,9 +75,11 @@ bool FrontEndFlow::ReadData() {
 
     static std::deque<IMUData> unsynced_imu_;
     static std::deque<GNSSData> unsynced_gnss_;
+    static std::deque<VelocityData> unsynced_velocity_;
 
     imu_sub_ptr_->ParseData(unsynced_imu_);
     gnss_sub_ptr_->ParseData(unsynced_gnss_);
+    velocity_sub_ptr_->ParseData(unsynced_velocity_);
 
     if (cloud_data_buff_.size() == 0)
         return false;
@@ -83,10 +88,11 @@ bool FrontEndFlow::ReadData() {
 
     bool valid_imu = IMUData::SyncData(unsynced_imu_, imu_data_buff_, cloud_time);
     bool valid_gnss = GNSSData::SyncData(unsynced_gnss_, gnss_data_buff_, cloud_time);
+    bool valid_velocity = VelocityData::SyncData(unsynced_velocity_, velocity_data_buff_, cloud_time);
 
     static bool sensor_inited = false;
     if (!sensor_inited) {
-        if (!valid_imu || !valid_gnss) {
+        if (!valid_imu || !valid_gnss || !valid_velocity) {
             cloud_data_buff_.pop_front();
             return false;
         }
@@ -129,7 +135,7 @@ bool FrontEndFlow::InitGNSS() {
 }
 
 /**
- * @brief 判断当前读取的yun 点云缓存队列是否有数据
+ * @brief 判断当前读取的点云缓存队列是否有数据
  *
  * @return true
  * @return false
@@ -141,11 +147,13 @@ bool FrontEndFlow::HasData() {
         return false;
     if (gnss_data_buff_.size() == 0)
         return false;
+    if (velocity_data_buff_.size() == 0)
+        return false;
     return true;
 }
 
 /**
- * @brief 去除时间对不上的数据
+ * @brief 去除时间相差过大的数据
  *
  * @return true
  * @return false
@@ -154,6 +162,7 @@ bool FrontEndFlow::IsValidData() {
     current_cloud_data_ = cloud_data_buff_.front();
     current_imu_data_ = imu_data_buff_.front();
     current_gnss_data_ = gnss_data_buff_.front();
+    current_velocity_data_ = velocity_data_buff_.front();
 
     double d_time = current_cloud_data_.time - current_imu_data_.time;
     if (d_time < -0.05) {
@@ -163,12 +172,14 @@ bool FrontEndFlow::IsValidData() {
     if (d_time > 0.05) {
         imu_data_buff_.pop_front();
         gnss_data_buff_.pop_front();
+        velocity_data_buff_.pop_front();
         return false;
     }
 
     imu_data_buff_.pop_front();
     gnss_data_buff_.pop_front();
     cloud_data_buff_.pop_front();
+    velocity_data_buff_.pop_front();
     return true;
 }
 
@@ -198,6 +209,11 @@ bool FrontEndFlow::UpdateGNSSOdometry() {
  * @return false
  */
 bool FrontEndFlow::UpdateLaserOdometry() {
+    // 将速度旋转至雷达坐标系
+    current_velocity_data_.TransfromCoordinate(imu_to_lidar_);
+    distortion_adjust_ptr_->SetMotionInfo(0.1, current_velocity_data_);
+    distortion_adjust_ptr_->AdjustCloud(current_cloud_data_.cloud_ptr, current_cloud_data_.cloud_ptr);
+
     static bool front_end_pose_inited = false;
     if (!front_end_pose_inited) {
         front_end_pose_inited = true;
@@ -207,10 +223,7 @@ bool FrontEndFlow::UpdateLaserOdometry() {
         return true;
     }
     laser_odometry_ = Eigen::Matrix4f::Identity();
-    if (front_end_ptr_->Update(current_cloud_data_, laser_odometry_))
-        return true;
-    else
-        return false;
+    return front_end_ptr_->Update(current_cloud_data_, laser_odometry_);
 }
 
 /**

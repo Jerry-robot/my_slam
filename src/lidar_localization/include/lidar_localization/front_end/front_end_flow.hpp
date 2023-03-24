@@ -20,6 +20,7 @@
 #include "lidar_localization/subscriber/cloud_subscriber.hpp"
 #include "lidar_localization/subscriber/gnss_subscriber.hpp"
 #include "lidar_localization/subscriber/imu_subscriber.hpp"
+#include "lidar_localization/subscriber/velocity_subscriber.hpp"
 
 #include "lidar_localization/global_defination/global_defination.h.in"
 #include "lidar_localization/publisher/cloud_publisher.hpp"
@@ -27,8 +28,9 @@
 #include "lidar_localization/tf_listener/tf_listener.hpp"
 
 #include "lidar_localization/front_end/front_end.hpp"
-
+#include "lidar_localization/models/scan_adjust/distortion_adjust.hpp"
 #include "lidar_localization/tools/file_manager.hpp"
+
 
 namespace lidar_localization {
 class FrontEndFlow {
@@ -53,6 +55,7 @@ class FrontEndFlow {
     std::shared_ptr<IMUSubscriber> imu_sub_ptr_;
     std::shared_ptr<GNSSSubscriber> gnss_sub_ptr_;
     std::shared_ptr<CloudSubscriber> cloud_sub_ptr_;
+    std::shared_ptr<VelocitySubscriber> velocity_sub_ptr_;
     std::shared_ptr<TFListener> imu_to_lidar_sub_ptr_;
 
     std::shared_ptr<CloudPublisher> cloud_pub_ptr_;
@@ -62,17 +65,17 @@ class FrontEndFlow {
     std::shared_ptr<OdometryPublisher> lidar_odom_pub_ptr_;
     std::shared_ptr<OdometryPublisher> gnss_odom_pub_ptr_;
 
+    std::shared_ptr<DistortionAdjust> distortion_adjust_ptr_;
+
     std::deque<IMUData> imu_data_buff_;
     std::deque<GNSSData> gnss_data_buff_;
     std::deque<CloudData> cloud_data_buff_;
+    std::deque<VelocityData> velocity_data_buff_;
 
     IMUData current_imu_data_;
     GNSSData current_gnss_data_;
     CloudData current_cloud_data_;
-
-    // std::shared_ptr<CloudData::CLOUD> global_map_ptr_;
-    // std::shared_ptr<CloudData::CLOUD> local_map_ptr_;
-    // std::shared_ptr<CloudData::CLOUD> current_scan_ptr_;
+    VelocityData current_velocity_data_;
 
     CloudData::CLOUD_PTR global_map_ptr_;
     CloudData::CLOUD_PTR local_map_ptr_;
