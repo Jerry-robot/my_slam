@@ -77,7 +77,7 @@ bool VelocityData::SyncData(std::deque<VelocityData>& unsync_data,
  * 
  * @param transform_matrix 
  */
-void VelocityData::TransfromCoordinate(const Eigen::Matrix4f& transform_matrix) {
+void VelocityData::TransformCoordinate(const Eigen::Matrix4f& transform_matrix) {
     Eigen::Vector3f linear_velocity_temp(linear_velocity.x, linear_velocity.y, linear_velocity.z);
     Eigen::Vector3f angular_velocity_temp(angular_velocity.x, angular_velocity.y, angular_velocity.z);
 

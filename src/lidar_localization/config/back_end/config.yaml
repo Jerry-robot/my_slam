@@ -1,0 +1,9 @@
+data_path: ./
+
+# 关键帧
+key_frame_distance: 2.0  # 关键帧距离
+
+# 优化
+optimize_step_with_none: 100 # 没有其他消息时，每隔step 发送一次优化位姿
+optimize_step_with_gnss: 100 # 每累计step 个gnss观测时，优化一次
+optimize_step_with_loop: 10  # 每累计step 个闭环约束时优化一次

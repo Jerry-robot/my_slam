@@ -36,7 +36,7 @@ class VelocityData {
     static bool SyncData(std::deque<VelocityData>& unsync_data,
                          std::deque<VelocityData>& synced_data,
                          double sync_time);
-    void TransfromCoordinate(const Eigen::Matrix4f& transform_matrix);
+    void TransformCoordinate(const Eigen::Matrix4f& transform_matrix);
 };
 
 }  // namespace lidar_localization

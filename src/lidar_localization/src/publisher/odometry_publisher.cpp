@@ -24,8 +24,15 @@ OdometryPublisher::OdometryPublisher(ros::NodeHandle& nh,
 }
 
 void OdometryPublisher::Publish(const Eigen::Matrix4f& transform_matrix) {
-    odometry_.header.stamp = ros::Time::now();
+    PublishData(transform_matrix, ros::Time::now());
+}
 
+void OdometryPublisher::Publish(const Eigen::Matrix4f& transform_matrix, double data_time) {
+    PublishData(transform_matrix, ros::Time(data_time));
+}
+
+void OdometryPublisher::PublishData(const Eigen::Matrix4f& transform_matrix, ros::Time data_time) {
+    odometry_.header.stamp = data_time;
     odometry_.pose.pose.position.x = transform_matrix(0, 3);
     odometry_.pose.pose.position.y = transform_matrix(1, 3);
     odometry_.pose.pose.position.z = transform_matrix(2, 3);
@@ -38,7 +45,6 @@ void OdometryPublisher::Publish(const Eigen::Matrix4f& transform_matrix) {
     odometry_.pose.pose.orientation.w = q.w();
 
     publisher_.publish(odometry_);
-
 }
 
 }  // namespace lidar_localization

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidar_localization)/rviz/mapping.rviz"/>
+
+    <node name="data_pretreat_node" pkg="lidar_localization" type="data_pretreat_node"  output="screen"/>
+
+    <node name="front_end_node" pkg="lidar_localization" type="front_end_node"  output="screen"/>
+
+    <node name="back_end_node" pkg="lidar_localization" type="back_end_node"  output="screen"/>
+    
+    <node name="viewer_node" pkg="lidar_localization" type="viewer_node"  output="screen"/>
+
+</launch>
