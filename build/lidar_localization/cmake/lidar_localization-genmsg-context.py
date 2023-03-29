@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv"
+services_str = "/home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv;/home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv"
 pkg_name = "lidar_localization"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

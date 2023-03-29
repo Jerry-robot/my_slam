@@ -34,16 +34,28 @@ BackEndFlow::BackEndFlow(ros::NodeHandle& nh) {
 bool BackEndFlow::Run() {
     if (!ReadData())
         return false;
-    // LOG(INFO) << "ReadData";
+    // LOG(INFO) << "后端==>ReadData";
 
     while (HasData()) {
+        // LOG(INFO) << "后端==>Has Data";
         if (!ValidData())
             continue;
+        // LOG(INFO) << "后端==>ValidData";
         UpdateBackEnd();
         LOG(INFO) << "后端==>发布laser位姿、优化关键帧";
         PublishData();
     }
 
+    return true;
+}
+
+bool BackEndFlow::ForceOptimize() {
+    back_end_ptr_->ForceOptimize();
+    if (back_end_ptr_->HasNewOptimized()) {
+        std::deque<KeyFrame> optimized_key_frames;
+        back_end_ptr_->GetOptimizedKeyFrames(optimized_key_frames);
+        key_frames_pub_ptr_->Publish(optimized_key_frames);
+    }
     return true;
 }
 

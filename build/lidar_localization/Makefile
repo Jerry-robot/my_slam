@@ -303,6 +303,21 @@ lidar_localization_gencpp/fast:
 .PHONY : lidar_localization_gencpp/fast
 
 # Convenience name for target.
+lidar_localization/CMakeFiles/_lidar_localization_generate_messages_check_deps_optimizeMap.dir/rule:
+	cd /home/gjw/my_slam/build && $(MAKE) -f CMakeFiles/Makefile2 lidar_localization/CMakeFiles/_lidar_localization_generate_messages_check_deps_optimizeMap.dir/rule
+.PHONY : lidar_localization/CMakeFiles/_lidar_localization_generate_messages_check_deps_optimizeMap.dir/rule
+
+# Convenience name for target.
+_lidar_localization_generate_messages_check_deps_optimizeMap: lidar_localization/CMakeFiles/_lidar_localization_generate_messages_check_deps_optimizeMap.dir/rule
+
+.PHONY : _lidar_localization_generate_messages_check_deps_optimizeMap
+
+# fast build rule for target.
+_lidar_localization_generate_messages_check_deps_optimizeMap/fast:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/_lidar_localization_generate_messages_check_deps_optimizeMap.dir/build.make lidar_localization/CMakeFiles/_lidar_localization_generate_messages_check_deps_optimizeMap.dir/build
+.PHONY : _lidar_localization_generate_messages_check_deps_optimizeMap/fast
+
+# Convenience name for target.
 lidar_localization/CMakeFiles/lidar_localization_generate_messages.dir/rule:
 	cd /home/gjw/my_slam/build && $(MAKE) -f CMakeFiles/Makefile2 lidar_localization/CMakeFiles/lidar_localization_generate_messages.dir/rule
 .PHONY : lidar_localization/CMakeFiles/lidar_localization_generate_messages.dir/rule
@@ -1721,78 +1736,6 @@ src/data_pretreat/data_pretreat_flow.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.s
 .PHONY : src/data_pretreat/data_pretreat_flow.cpp.s
 
-src/front_end/front_end.o: src/front_end/front_end.cpp.o
-
-.PHONY : src/front_end/front_end.o
-
-# target to build an object file
-src/front_end/front_end.cpp.o:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/front_end/front_end.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/front_end/front_end.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/front_end/front_end.cpp.o
-.PHONY : src/front_end/front_end.cpp.o
-
-src/front_end/front_end.i: src/front_end/front_end.cpp.i
-
-.PHONY : src/front_end/front_end.i
-
-# target to preprocess a source file
-src/front_end/front_end.cpp.i:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/front_end/front_end.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/front_end/front_end.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/front_end/front_end.cpp.i
-.PHONY : src/front_end/front_end.cpp.i
-
-src/front_end/front_end.s: src/front_end/front_end.cpp.s
-
-.PHONY : src/front_end/front_end.s
-
-# target to generate assembly for a file
-src/front_end/front_end.cpp.s:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/front_end/front_end.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/front_end/front_end.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/front_end/front_end.cpp.s
-.PHONY : src/front_end/front_end.cpp.s
-
-src/front_end/front_end_flow.o: src/front_end/front_end_flow.cpp.o
-
-.PHONY : src/front_end/front_end_flow.o
-
-# target to build an object file
-src/front_end/front_end_flow.cpp.o:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/front_end/front_end_flow.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/front_end/front_end_flow.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/front_end/front_end_flow.cpp.o
-.PHONY : src/front_end/front_end_flow.cpp.o
-
-src/front_end/front_end_flow.i: src/front_end/front_end_flow.cpp.i
-
-.PHONY : src/front_end/front_end_flow.i
-
-# target to preprocess a source file
-src/front_end/front_end_flow.cpp.i:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/front_end/front_end_flow.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/front_end/front_end_flow.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/front_end/front_end_flow.cpp.i
-.PHONY : src/front_end/front_end_flow.cpp.i
-
-src/front_end/front_end_flow.s: src/front_end/front_end_flow.cpp.s
-
-.PHONY : src/front_end/front_end_flow.s
-
-# target to generate assembly for a file
-src/front_end/front_end_flow.cpp.s:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/front_end/front_end_flow.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/front_end/front_end_flow.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/front_end/front_end_flow.cpp.s
-.PHONY : src/front_end/front_end_flow.cpp.s
-
 src/mapping/back_end/back_end.o: src/mapping/back_end/back_end.cpp.o
 
 .PHONY : src/mapping/back_end/back_end.o
@@ -2044,6 +1987,78 @@ src/models/cloud_filter/voxel_filter.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.s
 .PHONY : src/models/cloud_filter/voxel_filter.cpp.s
+
+src/models/graph_optimizer/g2o/g2o_graph_optimizer.o: src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+
+.PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.o
+
+# target to build an object file
+src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+.PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+
+src/models/graph_optimizer/g2o/g2o_graph_optimizer.i: src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+
+.PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.i
+
+# target to preprocess a source file
+src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+.PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+
+src/models/graph_optimizer/g2o/g2o_graph_optimizer.s: src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+
+.PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.s
+
+# target to generate assembly for a file
+src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+.PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+
+src/models/graph_optimizer/interface_graph_optimizer.o: src/models/graph_optimizer/interface_graph_optimizer.cpp.o
+
+.PHONY : src/models/graph_optimizer/interface_graph_optimizer.o
+
+# target to build an object file
+src/models/graph_optimizer/interface_graph_optimizer.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
+.PHONY : src/models/graph_optimizer/interface_graph_optimizer.cpp.o
+
+src/models/graph_optimizer/interface_graph_optimizer.i: src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+
+.PHONY : src/models/graph_optimizer/interface_graph_optimizer.i
+
+# target to preprocess a source file
+src/models/graph_optimizer/interface_graph_optimizer.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+.PHONY : src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+
+src/models/graph_optimizer/interface_graph_optimizer.s: src/models/graph_optimizer/interface_graph_optimizer.cpp.s
+
+.PHONY : src/models/graph_optimizer/interface_graph_optimizer.s
+
+# target to generate assembly for a file
+src/models/graph_optimizer/interface_graph_optimizer.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
+.PHONY : src/models/graph_optimizer/interface_graph_optimizer.cpp.s
 
 src/models/registration/ndt_registration.o: src/models/registration/ndt_registration.cpp.o
 
@@ -2785,6 +2800,7 @@ help:
 	@echo "... lidar_localization_generate_messages_eus"
 	@echo "... data_pretreat_node"
 	@echo "... lidar_localization_gencpp"
+	@echo "... _lidar_localization_generate_messages_check_deps_optimizeMap"
 	@echo "... lidar_localization_generate_messages"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -2887,12 +2903,6 @@ help:
 	@echo "... src/data_pretreat/data_pretreat_flow.o"
 	@echo "... src/data_pretreat/data_pretreat_flow.i"
 	@echo "... src/data_pretreat/data_pretreat_flow.s"
-	@echo "... src/front_end/front_end.o"
-	@echo "... src/front_end/front_end.i"
-	@echo "... src/front_end/front_end.s"
-	@echo "... src/front_end/front_end_flow.o"
-	@echo "... src/front_end/front_end_flow.i"
-	@echo "... src/front_end/front_end_flow.s"
 	@echo "... src/mapping/back_end/back_end.o"
 	@echo "... src/mapping/back_end/back_end.i"
 	@echo "... src/mapping/back_end/back_end.s"
@@ -2914,6 +2924,12 @@ help:
 	@echo "... src/models/cloud_filter/voxel_filter.o"
 	@echo "... src/models/cloud_filter/voxel_filter.i"
 	@echo "... src/models/cloud_filter/voxel_filter.s"
+	@echo "... src/models/graph_optimizer/g2o/g2o_graph_optimizer.o"
+	@echo "... src/models/graph_optimizer/g2o/g2o_graph_optimizer.i"
+	@echo "... src/models/graph_optimizer/g2o/g2o_graph_optimizer.s"
+	@echo "... src/models/graph_optimizer/interface_graph_optimizer.o"
+	@echo "... src/models/graph_optimizer/interface_graph_optimizer.i"
+	@echo "... src/models/graph_optimizer/interface_graph_optimizer.s"
 	@echo "... src/models/registration/ndt_registration.o"
 	@echo "... src/models/registration/ndt_registration.i"
 	@echo "... src/models/registration/ndt_registration.s"

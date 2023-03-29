@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/gjw/my_slam/build
 # Include the progress variables for this target.
 include lidar_localization/CMakeFiles/lidar_localization_generate_messages_nodejs.dir/progress.make
 
+lidar_localization/CMakeFiles/lidar_localization_generate_messages_nodejs: /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/optimizeMap.js
 lidar_localization/CMakeFiles/lidar_localization_generate_messages_nodejs: /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/saveMap.js
 
 
+/home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/optimizeMap.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/optimizeMap.js: /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from lidar_localization/optimizeMap.srv"
+	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv
+
 /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/saveMap.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/saveMap.js: /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from lidar_localization/saveMap.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from lidar_localization/saveMap.srv"
 	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv
 
 lidar_localization_generate_messages_nodejs: lidar_localization/CMakeFiles/lidar_localization_generate_messages_nodejs
+lidar_localization_generate_messages_nodejs: /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/optimizeMap.js
 lidar_localization_generate_messages_nodejs: /home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/saveMap.js
 lidar_localization_generate_messages_nodejs: lidar_localization/CMakeFiles/lidar_localization_generate_messages_nodejs.dir/build.make
 

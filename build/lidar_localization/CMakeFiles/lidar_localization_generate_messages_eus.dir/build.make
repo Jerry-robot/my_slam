@@ -53,20 +53,27 @@ CMAKE_BINARY_DIR = /home/gjw/my_slam/build
 # Include the progress variables for this target.
 include lidar_localization/CMakeFiles/lidar_localization_generate_messages_eus.dir/progress.make
 
+lidar_localization/CMakeFiles/lidar_localization_generate_messages_eus: /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/optimizeMap.l
 lidar_localization/CMakeFiles/lidar_localization_generate_messages_eus: /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/saveMap.l
 lidar_localization/CMakeFiles/lidar_localization_generate_messages_eus: /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/manifest.l
 
 
+/home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/optimizeMap.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/optimizeMap.l: /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from lidar_localization/optimizeMap.srv"
+	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv
+
 /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/saveMap.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/saveMap.l: /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from lidar_localization/saveMap.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from lidar_localization/saveMap.srv"
 	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv
 
 /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for lidar_localization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for lidar_localization"
 	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization lidar_localization std_msgs
 
 lidar_localization_generate_messages_eus: lidar_localization/CMakeFiles/lidar_localization_generate_messages_eus
+lidar_localization_generate_messages_eus: /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/optimizeMap.l
 lidar_localization_generate_messages_eus: /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/srv/saveMap.l
 lidar_localization_generate_messages_eus: /home/gjw/my_slam/devel/share/roseus/ros/lidar_localization/manifest.l
 lidar_localization_generate_messages_eus: lidar_localization/CMakeFiles/lidar_localization_generate_messages_eus.dir/build.make

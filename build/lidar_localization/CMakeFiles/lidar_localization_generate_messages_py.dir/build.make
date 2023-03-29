@@ -53,21 +53,29 @@ CMAKE_BINARY_DIR = /home/gjw/my_slam/build
 # Include the progress variables for this target.
 include lidar_localization/CMakeFiles/lidar_localization_generate_messages_py.dir/progress.make
 
+lidar_localization/CMakeFiles/lidar_localization_generate_messages_py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py
 lidar_localization/CMakeFiles/lidar_localization_generate_messages_py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py
 lidar_localization/CMakeFiles/lidar_localization_generate_messages_py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py
 
 
+/home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py: /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV lidar_localization/optimizeMap"
+	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv
+
 /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
 /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py: /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV lidar_localization/saveMap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV lidar_localization/saveMap"
 	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv
 
 /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py
 /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for lidar_localization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for lidar_localization"
 	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv --initpy
 
 lidar_localization_generate_messages_py: lidar_localization/CMakeFiles/lidar_localization_generate_messages_py
+lidar_localization_generate_messages_py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py
 lidar_localization_generate_messages_py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py
 lidar_localization_generate_messages_py: /home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py
 lidar_localization_generate_messages_py: lidar_localization/CMakeFiles/lidar_localization_generate_messages_py.dir/build.make

@@ -53,17 +53,26 @@ CMAKE_BINARY_DIR = /home/gjw/my_slam/build
 # Include the progress variables for this target.
 include lidar_localization/CMakeFiles/lidar_localization_generate_messages_cpp.dir/progress.make
 
+lidar_localization/CMakeFiles/lidar_localization_generate_messages_cpp: /home/gjw/my_slam/devel/include/lidar_localization/optimizeMap.h
 lidar_localization/CMakeFiles/lidar_localization_generate_messages_cpp: /home/gjw/my_slam/devel/include/lidar_localization/saveMap.h
 
+
+/home/gjw/my_slam/devel/include/lidar_localization/optimizeMap.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/gjw/my_slam/devel/include/lidar_localization/optimizeMap.h: /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv
+/home/gjw/my_slam/devel/include/lidar_localization/optimizeMap.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/gjw/my_slam/devel/include/lidar_localization/optimizeMap.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from lidar_localization/optimizeMap.srv"
+	cd /home/gjw/my_slam/src/lidar_localization && /home/gjw/my_slam/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/include/lidar_localization -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/gjw/my_slam/devel/include/lidar_localization/saveMap.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/gjw/my_slam/devel/include/lidar_localization/saveMap.h: /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv
 /home/gjw/my_slam/devel/include/lidar_localization/saveMap.h: /opt/ros/melodic/share/gencpp/msg.h.template
 /home/gjw/my_slam/devel/include/lidar_localization/saveMap.h: /opt/ros/melodic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from lidar_localization/saveMap.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from lidar_localization/saveMap.srv"
 	cd /home/gjw/my_slam/src/lidar_localization && /home/gjw/my_slam/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/include/lidar_localization -e /opt/ros/melodic/share/gencpp/cmake/..
 
 lidar_localization_generate_messages_cpp: lidar_localization/CMakeFiles/lidar_localization_generate_messages_cpp
+lidar_localization_generate_messages_cpp: /home/gjw/my_slam/devel/include/lidar_localization/optimizeMap.h
 lidar_localization_generate_messages_cpp: /home/gjw/my_slam/devel/include/lidar_localization/saveMap.h
 lidar_localization_generate_messages_cpp: lidar_localization/CMakeFiles/lidar_localization_generate_messages_cpp.dir/build.make
 

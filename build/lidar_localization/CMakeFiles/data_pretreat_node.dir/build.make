@@ -105,57 +105,9 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pret
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o.provides.build: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o
 
 
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o"
-	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end.cpp
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.i"
-	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end.cpp > CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.i
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.s"
-	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end.cpp -o CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.s
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.requires:
-
-.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.requires
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.provides: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.requires
-	$(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.provides.build
-.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.provides
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.provides.build: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o
-
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end_flow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o"
-	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end_flow.cpp
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.i"
-	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end_flow.cpp > CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.i
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.s"
-	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gjw/my_slam/src/lidar_localization/src/front_end/front_end_flow.cpp -o CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.s
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.requires:
-
-.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.requires
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.provides: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.requires
-	$(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.provides.build
-.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.provides
-
-lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.provides.build: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o
-
-
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/back_end.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/back_end.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.i: cmake_force
@@ -179,7 +131,7 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_e
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/back_end_flow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/back_end_flow.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.i: cmake_force
@@ -203,7 +155,7 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_e
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/mapping/front_end/front_end.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/mapping/front_end/front_end.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.i: cmake_force
@@ -227,7 +179,7 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/mapping/front_end/front_end_flow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/mapping/front_end/front_end_flow.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.i: cmake_force
@@ -251,7 +203,7 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/view.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.i: cmake_force
@@ -275,7 +227,7 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/view_flow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/view_flow.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.i: cmake_force
@@ -299,7 +251,7 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flo
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/models/cloud_filter/voxel_filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o"
 	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/models/cloud_filter/voxel_filter.cpp
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.i: cmake_force
@@ -319,6 +271,54 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/vox
 .PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o.provides
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o.provides.build: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o
+
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp > CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp -o CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.requires:
+
+.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.requires
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.provides: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.requires
+	$(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.provides.build
+.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.provides
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.provides.build: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o: /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/interface_graph_optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o -c /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/interface_graph_optimizer.cpp
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/interface_graph_optimizer.cpp > CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s"
+	cd /home/gjw/my_slam/build/lidar_localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gjw/my_slam/src/lidar_localization/src/models/graph_optimizer/interface_graph_optimizer.cpp -o CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.requires:
+
+.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.requires
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.provides: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.requires
+	$(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.provides.build
+.PHONY : lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.provides
+
+lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.provides.build: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
 
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/registration/ndt_registration.cpp.o: lidar_localization/CMakeFiles/data_pretreat_node.dir/flags.make
@@ -805,8 +805,6 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/src/tools/file_manager.cpp.
 data_pretreat_node_OBJECTS = \
 "CMakeFiles/data_pretreat_node.dir/src/apps/data_pretreat_node.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o" \
-"CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o" \
-"CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o" \
@@ -814,6 +812,8 @@ data_pretreat_node_OBJECTS = \
 "CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o" \
+"CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o" \
+"CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/models/registration/ndt_registration.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o" \
 "CMakeFiles/data_pretreat_node.dir/src/publisher/cloud_publisher.cpp.o" \
@@ -840,8 +840,6 @@ data_pretreat_node_EXTERNAL_OBJECTS =
 
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/apps/data_pretreat_node.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o
-/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o
-/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o
@@ -849,6 +847,8 @@ data_pretreat_node_EXTERNAL_OBJECTS =
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/registration/ndt_registration.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/cloud_publisher.cpp.o
@@ -1253,6 +1253,14 @@ data_pretreat_node_EXTERNAL_OBJECTS =
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libvtkViewsGeovis-6.3.so.6.3.0
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libvtkWrappingJava-6.3.so.6.3.0
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /home/gjw/my_slam/devel/lib/liblibGeographiccc.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_types_data.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_core.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_stuff.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_solver_pcg.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_solver_csparse.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_solver_cholmod.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_types_slam3d.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_types_slam3d_addons.so
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libpcl_search.so
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libpcl_features.so
@@ -1444,6 +1452,14 @@ data_pretreat_node_EXTERNAL_OBJECTS =
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libpcl_people.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_types_data.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_core.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_stuff.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_solver_pcg.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_solver_csparse.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_solver_cholmod.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_types_slam3d.so
+/home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/local/lib/libg2o_types_slam3d_addons.so
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libvtkFiltersFlowPaths-6.3.so.6.3.0
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libtheoraenc.so
 /home/gjw/my_slam/devel/lib/lidar_localization/data_pretreat_node: /usr/lib/x86_64-linux-gnu/libtheoradec.so
@@ -1545,8 +1561,6 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/build: /home/gjw/my_slam/de
 
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/apps/data_pretreat_node.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o.requires
-lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end.cpp.o.requires
-lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/front_end/front_end_flow.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o.requires
@@ -1554,6 +1568,8 @@ lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localizatio
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o.requires
+lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o.requires
+lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/registration/ndt_registration.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o.requires
 lidar_localization/CMakeFiles/data_pretreat_node.dir/requires: lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/cloud_publisher.cpp.o.requires

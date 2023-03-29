@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lidar_localization_generate_messages_nodejs"
+  "/home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/optimizeMap.js"
   "/home/gjw/my_slam/devel/share/gennodejs/ros/lidar_localization/srv/saveMap.js"
 )
 

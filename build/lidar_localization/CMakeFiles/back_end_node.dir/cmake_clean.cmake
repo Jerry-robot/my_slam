@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/back_end_node.dir/src/apps/back_end_node.cpp.o"
   "CMakeFiles/back_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o"
-  "CMakeFiles/back_end_node.dir/src/front_end/front_end.cpp.o"
-  "CMakeFiles/back_end_node.dir/src/front_end/front_end_flow.cpp.o"
   "CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end.cpp.o"
   "CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end_flow.cpp.o"
   "CMakeFiles/back_end_node.dir/src/mapping/front_end/front_end.cpp.o"
@@ -10,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/back_end_node.dir/src/mapping/viewer/view.cpp.o"
   "CMakeFiles/back_end_node.dir/src/mapping/viewer/view_flow.cpp.o"
   "CMakeFiles/back_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.o"
+  "CMakeFiles/back_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o"
+  "CMakeFiles/back_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o"
   "CMakeFiles/back_end_node.dir/src/models/registration/ndt_registration.cpp.o"
   "CMakeFiles/back_end_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o"
   "CMakeFiles/back_end_node.dir/src/publisher/cloud_publisher.cpp.o"

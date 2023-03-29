@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lidar_localization_generate_messages_cpp"
+  "/home/gjw/my_slam/devel/include/lidar_localization/optimizeMap.h"
   "/home/gjw/my_slam/devel/include/lidar_localization/saveMap.h"
 )
 

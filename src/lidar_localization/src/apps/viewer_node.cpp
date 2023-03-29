@@ -15,7 +15,19 @@
 #include <boost/filesystem.hpp>
 #include "lidar_localization/global_defination/global_defination.h.in"
 #include "lidar_localization/mapping/viewer/viewer_flow.hpp"
+#include "lidar_localization/saveMap.h"
+
 using namespace lidar_localization;
+
+std::shared_ptr<ViewerFlow> _front_end_flow_ptr;
+
+bool _need_save_map = false;
+
+bool save_map_callback(saveMap::Request& request, saveMap::Response& response){
+    _need_save_map = true;
+    response.succeed = true;
+    return response.succeed;
+}
 
 int main(int argc, char* argv[]) {
     google::InitGoogleLogging(argv[0]);
@@ -24,12 +36,18 @@ int main(int argc, char* argv[]) {
 
     ros::init(argc, argv, "viewer_flow_node");
     ros::NodeHandle nh;
-    std::shared_ptr<ViewerFlow> _front_end_flow_ptr = std::make_shared<ViewerFlow>(nh);
-    LOG(INFO)<<"可视==>启动可视化模块！";
+    _front_end_flow_ptr = std::make_shared<ViewerFlow>(nh);
+    ros::ServiceServer service = nh.advertiseService("save_map", save_map_callback);
+
+    LOG(INFO) << "可视==>启动可视化模块！";
     ros::Rate rate(100);
     while (ros::ok()) {
         ros::spinOnce();
         _front_end_flow_ptr->Run();
+        if(_need_save_map){
+            _front_end_flow_ptr->SaveMap();
+            _need_save_map = false;
+        }
         rate.sleep();
     }
     return 0;

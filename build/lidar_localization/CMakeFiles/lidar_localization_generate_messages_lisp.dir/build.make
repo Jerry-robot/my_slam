@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/gjw/my_slam/build
 # Include the progress variables for this target.
 include lidar_localization/CMakeFiles/lidar_localization_generate_messages_lisp.dir/progress.make
 
+lidar_localization/CMakeFiles/lidar_localization_generate_messages_lisp: /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/optimizeMap.lisp
 lidar_localization/CMakeFiles/lidar_localization_generate_messages_lisp: /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/saveMap.lisp
 
 
+/home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/optimizeMap.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/optimizeMap.lisp: /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from lidar_localization/optimizeMap.srv"
+	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gjw/my_slam/src/lidar_localization/srv/optimizeMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv
+
 /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/saveMap.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
 /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/saveMap.lisp: /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from lidar_localization/saveMap.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gjw/my_slam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from lidar_localization/saveMap.srv"
 	cd /home/gjw/my_slam/build/lidar_localization && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/gjw/my_slam/src/lidar_localization/srv/saveMap.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p lidar_localization -o /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv
 
 lidar_localization_generate_messages_lisp: lidar_localization/CMakeFiles/lidar_localization_generate_messages_lisp
+lidar_localization_generate_messages_lisp: /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/optimizeMap.lisp
 lidar_localization_generate_messages_lisp: /home/gjw/my_slam/devel/share/common-lisp/ros/lidar_localization/srv/saveMap.lisp
 lidar_localization_generate_messages_lisp: lidar_localization/CMakeFiles/lidar_localization_generate_messages_lisp.dir/build.make
 

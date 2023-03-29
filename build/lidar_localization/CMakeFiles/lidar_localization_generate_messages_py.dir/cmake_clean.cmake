@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lidar_localization_generate_messages_py"
+  "/home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_optimizeMap.py"
   "/home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/_saveMap.py"
   "/home/gjw/my_slam/devel/lib/python2.7/dist-packages/lidar_localization/srv/__init__.py"
 )
