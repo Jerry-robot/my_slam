@@ -10,10 +10,11 @@
  */
 
 #include "lidar_localization/mapping/back_end/back_end.hpp"
-
 #include <pcl/io/pcd_io.h>
 #include <Eigen/Dense>
 #include "glog/logging.h"
+#include "lidar_localization/sensor_data/loop_pose.hpp"
+#include "lidar_localization/sensor_data/pose_data.hpp"
 
 #include "lidar_localization/global_defination/global_defination.h.in"
 #include "lidar_localization/tools/file_manager.hpp"
@@ -64,7 +65,7 @@ bool BackEnd::InitDataPath(const YAML::Node& config_node) {
         return false;
     if (!FileManager::CreateFile(laser_odom_ofs_, trajectory_path_ + "/laser_odom.txt"))
         return false;
-
+    ;
     return true;
 }
 
@@ -104,13 +105,28 @@ bool BackEnd::InitGraphOptimizer(const YAML::Node& config_node) {
 bool BackEnd::Update(const CloudData& cloud_data, const PoseData& laser_odom, const PoseData& gnss_pose) {
     ResetParam();
 
-    SaveTrajectory(laser_odom, gnss_pose);
-
-    if (MaybeNewKeyFrame(cloud_data, laser_odom)) {
+    if (MaybeNewKeyFrame(cloud_data, laser_odom, gnss_pose)) {
+        SavePose(laser_odom_ofs_, laser_odom.pose);
+        SavePose(ground_truth_ofs_, gnss_pose.pose);
         AddNodeAndEdge(gnss_pose);
-        MaybeOptimized();
+        if (MaybeOptimized()) {
+            SaveOptimizedPose();
+        }
     }
 
+    return true;
+}
+
+bool BackEnd::InsertLoopPose(const LoopPose& loop_pose) {
+    if (!graph_optimizer_config_.use_loop_close)
+        return false;
+    Eigen::Isometry3d isometry;
+    isometry.matrix() = loop_pose.pose.cast<double>();
+    graph_optimizer_ptr_->AddSe3Edge(loop_pose.index0, loop_pose.index1, isometry,
+                                     graph_optimizer_config_.close_loop_noise);
+
+    new_loop_cnt_++;
+    LOG(INFO) << "插入闭环：" << loop_pose.index0 << "," << loop_pose.index1;
     return true;
 }
 
@@ -119,37 +135,19 @@ void BackEnd::ResetParam() {
     has_new_optimized_ = false;
 }
 
-bool BackEnd::SaveTrajectory(const PoseData& laser_odom, const PoseData& gnss_pose) {
-    for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            ground_truth_ofs_ << gnss_pose.pose(i, j);
-            laser_odom_ofs_ << laser_odom.pose(i, j);
-
-            if (i == 2 && j == 3) {
-                ground_truth_ofs_ << std::endl;
-                laser_odom_ofs_ << std::endl;
-            } else {
-                ground_truth_ofs_ << " ";
-                laser_odom_ofs_ << " ";
-            }
-        }
-    }
-
-    return true;
-}
-
-bool BackEnd::MaybeNewKeyFrame(const CloudData& cloud_data, const PoseData& laser_odom) {
+bool BackEnd::MaybeNewKeyFrame(const CloudData& cloud_data, const PoseData& laser_odom, const PoseData& gnss_pose) {
+    static Eigen::Matrix4f last_key_pose = laser_odom.pose;
     if (key_frames_deque_.size() == 0) {
         has_new_key_frame_ = true;
-        last_key_pose_ = laser_odom.pose;
+        last_key_pose = laser_odom.pose;
     }
 
     // 匹配之后根据距离判断是否需要生成新的关键帧，如果需要，则做相应更新
-    if (fabs(laser_odom.pose(0, 3) - last_key_pose_(0, 3)) + fabs(laser_odom.pose(1, 3) - last_key_pose_(1, 3)) +
-            fabs(laser_odom.pose(2, 3) - last_key_pose_(2, 3)) >
+    if (fabs(laser_odom.pose(0, 3) - last_key_pose(0, 3)) + fabs(laser_odom.pose(1, 3) - last_key_pose(1, 3)) +
+            fabs(laser_odom.pose(2, 3) - last_key_pose(2, 3)) >
         key_frame_distance_) {
         has_new_key_frame_ = true;
-        last_key_pose_ = laser_odom.pose;
+        last_key_pose = laser_odom.pose;
     }
 
     if (has_new_key_frame_) {
@@ -163,10 +161,29 @@ bool BackEnd::MaybeNewKeyFrame(const CloudData& cloud_data, const PoseData& lase
         key_frame.pose = laser_odom.pose;
         key_frames_deque_.push_back(key_frame);
 
-        curren_key_frame_ = key_frame;
+        current_key_frame_ = key_frame;
+
+        current_key_gnss_.time = gnss_pose.time;
+        current_key_gnss_.index = key_frame.index;
+        current_key_gnss_.pose = gnss_pose.pose;
     }
 
     return has_new_key_frame_;
+}
+
+
+bool BackEnd::SavePose(std::ofstream& ofs, const Eigen::Matrix4f& pose) {
+    for (int i = 0; i < 3; ++i)
+        for (int j = 0; j < 4; ++j) {
+            ofs << pose(i, j);
+            if (i == 2 && j == 3) {
+                ofs << std::endl;
+            } else {
+                ofs << " ";
+            }
+        }
+
+    return true;
 }
 
 // 添加优化顶点与边
@@ -174,19 +191,24 @@ bool BackEnd::AddNodeAndEdge(const PoseData& gnss_data) {
     Eigen::Isometry3d isometry;
 
     // 添加关键帧
-    isometry.matrix() = curren_key_frame_.pose.cast<double>();
-    graph_optimizer_ptr_->AddSe3Node(isometry, false);
+    isometry.matrix() = current_key_frame_.pose.cast<double>();
+    if (!graph_optimizer_config_.use_gnss && graph_optimizer_ptr_->GetNodeNum() == 0) {
+        graph_optimizer_ptr_->AddSe3Node(isometry, true);
+    } else {
+        graph_optimizer_ptr_->AddSe3Node(isometry, false);
+    }
+
     new_key_frame_cnt_++;
 
     // 添加激光雷达里程计对应的边 相对位姿
-    static KeyFrame last_key_frame = curren_key_frame_;
+    static KeyFrame last_key_frame = current_key_frame_;
     int node_num = graph_optimizer_ptr_->GetNodeNum();
     if (node_num > 1) {
-        Eigen::Matrix4f relative_pose = last_key_frame.pose.inverse() * curren_key_frame_.pose;
+        Eigen::Matrix4f relative_pose = last_key_frame.pose.inverse() * current_key_frame_.pose;
         isometry.matrix() = relative_pose.cast<double>();
         graph_optimizer_ptr_->AddSe3Edge(node_num - 2, node_num - 1, isometry, graph_optimizer_config_.odom_edge_noise);
     }
-    last_key_frame = curren_key_frame_;
+    last_key_frame = current_key_frame_;
 
     // 添加GNSS观测对应的边
     if (graph_optimizer_config_.use_gnss) {
@@ -201,7 +223,7 @@ bool BackEnd::AddNodeAndEdge(const PoseData& gnss_data) {
 }
 
 bool BackEnd::MaybeOptimized() {
-    static bool need_optimize = false;
+    bool need_optimize = false;
     if (new_gnss_cnt_ > graph_optimizer_config_.optimize_step_with_gnss)
         need_optimize = true;
     if (new_loop_cnt_ > graph_optimizer_config_.optimize_step_with_loop)
@@ -221,6 +243,19 @@ bool BackEnd::MaybeOptimized() {
     return true;
 }
 
+bool BackEnd::SaveOptimizedPose() {
+    if (graph_optimizer_ptr_->GetNodeNum() == 0)
+        return false;
+    if (!FileManager::CreateFile(optimized_pose_ofs_, trajectory_path_ + "/optimized.txt"))
+        return false;
+
+    graph_optimizer_ptr_->GetOptimizedPose(optimized_pose_);
+    for (size_t i = 0; i < optimized_pose_.size(); ++i) {
+        SavePose(optimized_pose_ofs_, optimized_pose_[i]);
+    }
+    return true;
+}
+
 /**
  * @brief 强制进行优化
  *
@@ -230,12 +265,18 @@ bool BackEnd::MaybeOptimized() {
 bool BackEnd::ForceOptimize() {
     if (graph_optimizer_ptr_->Optimize())
         has_new_optimized_ = true;
-
+    SaveOptimizedPose();
     return has_new_optimized_;
 }
 
 void BackEnd::GetOptimizedKeyFrames(std::deque<KeyFrame>& key_frames_deque) {
-    key_frames_deque = key_frames_deque_;
+    KeyFrame key_frame;
+    for (size_t i = 0; i < optimized_pose_.size(); i++) {
+        key_frame.pose = optimized_pose_.at(i);
+        key_frame.index = (unsigned int)i;
+        key_frames_deque.push_back(key_frame);
+    }
+
 }
 
 bool BackEnd::HasNewKeyFrame() {
@@ -247,6 +288,11 @@ bool BackEnd::HasNewOptimized() {
 }
 
 void BackEnd::GetLatestKeyFrame(KeyFrame& key_frame) {
-    key_frame = curren_key_frame_;
+    key_frame = current_key_frame_;
 }
+
+void BackEnd::GetLatestKeyGNSS(KeyFrame& key_frame) {
+    key_frame = current_key_gnss_;
+}
+
 }  // namespace lidar_localization

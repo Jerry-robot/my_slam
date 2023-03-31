@@ -1,5 +1,7 @@
-data_path: ./       # 数据存放路径
+# data_path: ./       # 数据存放路径
+data_path: /media/gjw/Elements/slam_data       # 数据存放路径
 
+# /media/gjw/Elements/slam_data
 # 全局地图
 global_map_filter: voxel_filter
 

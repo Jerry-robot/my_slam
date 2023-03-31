@@ -45,6 +45,10 @@ bool NDTRegistration::SetInputTarget(const CloudData::CLOUD_PTR& input_target) {
     return true;
 }
 
+float NDTRegistration::GetFitnessScore(){
+    return ndt_ptr_->getFitnessScore();
+}
+
 bool NDTRegistration::ScanMatch(const CloudData::CLOUD_PTR& input_source,
                                 const Eigen::Matrix4f& predict_pose,
                                 CloudData::CLOUD_PTR& result_cloud_ptr,

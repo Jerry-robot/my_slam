@@ -31,6 +31,9 @@ class Viewer {
                 PoseData transformed_data,
                 CloudData cloud_data);
 
+    bool UpdateWithNewKeyFrame(std::deque<KeyFrame>& new_key_frames, PoseData transformed_data, CloudData cloud_data);
+    bool UpdateWithOptimizedKeyFrames(std::deque<KeyFrame>& optimized_key_frames);
+
     bool SaveMap();
     Eigen::Matrix4f& GetCurrentPose();
     CloudData::CLOUD_PTR& GetCurrentScan();

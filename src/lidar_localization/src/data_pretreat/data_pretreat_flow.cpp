@@ -33,7 +33,7 @@ bool DataPretreatFlow::Run() {
         return false;
     }
     if (!InitGNSS()) {
-        LOG(INFO) << "初始化 GNSS";
+        // LOG(INFO) << "初始化 GNSS";
         return false;
     }
 
@@ -213,7 +213,7 @@ bool DataPretreatFlow::TransformData() {
  * @return false
  */
 bool DataPretreatFlow::PublishData() {
-    LOG(INFO) << "处理==>数据预处理完毕,发布GNSS pose与点云";
+    // LOG(INFO) << "处理==>数据预处理完毕,发布GNSS pose与点云";
     gnss_odom_pub_ptr_->Publish(gnss_pose_, current_cloud_data_.time);
     cloud_pub_ptr_->Publish(current_cloud_data_.cloud_ptr, current_cloud_data_.time);
     return true;

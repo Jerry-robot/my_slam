@@ -31,20 +31,6 @@ ros/message_operations.h
 -
 
 /home/gjw/my_slam/devel/include/lidar_localization/saveMapResponse.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
 
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/data_pretreat/data_pretreat_flow.hpp
 ros/ros.h
@@ -85,6 +71,8 @@ lidar_localization/sensor_data/cloud_data.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/sensor_data/cloud_data.hpp
 lidar_localization/sensor_data/key_frame.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/sensor_data/key_frame.hpp
+lidar_localization/sensor_data/loop_pose.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/sensor_data/loop_pose.hpp
 lidar_localization/sensor_data/pose_data.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/sensor_data/pose_data.hpp
 lidar_localization/models/graph_optimizer/g2o/g2o_graph_optimizer.hpp
@@ -99,6 +87,8 @@ lidar_localization/subscriber/cloud_subscriber.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/subscriber/cloud_subscriber.hpp
 lidar_localization/subscriber/odometry_subscriber.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/subscriber/odometry_subscriber.hpp
+lidar_localization/subscriber/loop_pose_subscriber.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/subscriber/loop_pose_subscriber.hpp
 lidar_localization/publisher/key_frame_publisher.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/back_end/lidar_localization/publisher/key_frame_publisher.hpp
 lidar_localization/publisher/key_frames_publisher.hpp
@@ -149,6 +139,36 @@ lidar_localization/publisher/odometry_publisher.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/front_end/lidar_localization/publisher/odometry_publisher.hpp
 lidar_localization/mapping/front_end/front_end.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/front_end/lidar_localization/mapping/front_end/front_end.hpp
+
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/loop_closing.hpp
+pcl/registration/ndt.h
+-
+yaml-cpp/yaml.h
+-
+Eigen/Dense
+-
+deque
+-
+lidar_localization/models/cloud_filter/cloud_filter_interface.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/lidar_localization/models/cloud_filter/cloud_filter_interface.hpp
+lidar_localization/models/registration/registration_interface.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/lidar_localization/models/registration/registration_interface.hpp
+lidar_localization/sensor_data/key_frame.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/lidar_localization/sensor_data/key_frame.hpp
+lidar_localization/sensor_data/loop_pose.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/lidar_localization/sensor_data/loop_pose.hpp
+
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/loop_closing_flow.hpp
+ros/ros.h
+-
+deque
+-
+lidar_localization/subscriber/key_frame_subscriber.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/lidar_localization/subscriber/key_frame_subscriber.hpp
+lidar_localization/publisher/loop_pose_publisher.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/lidar_localization/publisher/loop_pose_publisher.hpp
+lidar_localization/mapping/loop_closing/loop_closing.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/loop_closing/lidar_localization/mapping/loop_closing/loop_closing.hpp
 
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/mapping/viewer/viewer.hpp
 string
@@ -249,10 +269,10 @@ string
 -
 
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/models/registration/ndt_registration.hpp
-lidar_localization/models/registration/registration_interface.hpp
-/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/models/registration/lidar_localization/models/registration/registration_interface.hpp
 pcl/registration/ndt.h
 -
+lidar_localization/models/registration/registration_interface.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/models/registration/lidar_localization/models/registration/registration_interface.hpp
 
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/models/registration/registration_interface.hpp
 lidar_localization/sensor_data/cloud_data.hpp
@@ -310,6 +330,14 @@ geometry_msgs/PoseStamped.h
 lidar_localization/sensor_data/key_frame.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/publisher/lidar_localization/sensor_data/key_frame.hpp
 
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/publisher/loop_pose_publisher.hpp
+ros/ros.h
+-
+geometry_msgs/PoseWithCovarianceStamped.h
+-
+lidar_localization/sensor_data/loop_pose.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/publisher/lidar_localization/sensor_data/loop_pose.hpp
+
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/publisher/odometry_publisher.hpp
 string
 -
@@ -345,6 +373,10 @@ deque
 -
 
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/sensor_data/key_frame.hpp
+Eigen/Dense
+-
+
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/sensor_data/loop_pose.hpp
 Eigen/Dense
 -
 
@@ -421,6 +453,16 @@ geometry_msgs/PoseStamped.h
 -
 lidar_localization/sensor_data/key_frame.hpp
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/subscriber/lidar_localization/sensor_data/key_frame.hpp
+
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/subscriber/loop_pose_subscriber.hpp
+ros/ros.h
+-
+deque
+-
+lidar_localization/sensor_data/loop_pose.hpp
+/home/gjw/my_slam/src/lidar_localization/include/lidar_localization/subscriber/lidar_localization/sensor_data/loop_pose.hpp
+geometry_msgs/PoseWithCovarianceStamped.h
+-
 
 /home/gjw/my_slam/src/lidar_localization/include/lidar_localization/subscriber/odometry_subscriber.hpp
 nav_msgs/Odometry.h
@@ -499,6 +541,10 @@ Eigen/Dense
 -
 glog/logging.h
 /home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/glog/logging.h
+lidar_localization/sensor_data/loop_pose.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/lidar_localization/sensor_data/loop_pose.hpp
+lidar_localization/sensor_data/pose_data.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/lidar_localization/sensor_data/pose_data.hpp
 lidar_localization/global_defination/global_defination.h.in
 /home/gjw/my_slam/src/lidar_localization/src/mapping/back_end/lidar_localization/global_defination/global_defination.h.in
 lidar_localization/tools/file_manager.hpp
@@ -532,7 +578,35 @@ boost/filesystem.hpp
 lidar_localization/mapping/front_end/front_end_flow.hpp
 /home/gjw/my_slam/src/lidar_localization/src/mapping/front_end/lidar_localization/mapping/front_end/front_end_flow.hpp
 
-/home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/view.cpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/loop_closing.cpp
+glog/logging.h
+-
+pcl/common/transforms.h
+-
+pcl/io/pcd_io.h
+-
+algorithm
+-
+cmath
+-
+lidar_localization/global_defination/global_defination.h
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/lidar_localization/global_defination/global_defination.h
+lidar_localization/mapping/loop_closing/loop_closing.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/lidar_localization/mapping/loop_closing/loop_closing.hpp
+lidar_localization/models/cloud_filter/voxel_filter.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/lidar_localization/models/cloud_filter/voxel_filter.hpp
+lidar_localization/models/registration/ndt_registration.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/lidar_localization/models/registration/ndt_registration.hpp
+lidar_localization/tools/file_manager.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/lidar_localization/tools/file_manager.hpp
+
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/loop_closing_flow.cpp
+lidar_localization/mapping/loop_closing/loop_closing_flow.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/loop_closing/lidar_localization/mapping/loop_closing/loop_closing_flow.hpp
+glog/logging.h
+-
+
+/home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/viewer.cpp
 lidar_localization/mapping/viewer/viewer.hpp
 /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/lidar_localization/mapping/viewer/viewer.hpp
 pcl/common/transforms.h
@@ -541,12 +615,12 @@ pcl/io/pcd_io.h
 -
 glog/logging.h
 /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/glog/logging.h
-lidar_localization/tools/file_manager.hpp
-/home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/lidar_localization/tools/file_manager.hpp
 lidar_localization/global_defination/global_defination.h
 /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/lidar_localization/global_defination/global_defination.h
+lidar_localization/tools/file_manager.hpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/lidar_localization/tools/file_manager.hpp
 
-/home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/view_flow.cpp
+/home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/viewer_flow.cpp
 lidar_localization/mapping/viewer/viewer.hpp
 /home/gjw/my_slam/src/lidar_localization/src/mapping/viewer/lidar_localization/mapping/viewer/viewer.hpp
 pcl/common/transforms.h
@@ -614,6 +688,14 @@ lidar_localization/publisher/key_frames_publisher.hpp
 Eigen/Dense
 -
 
+/home/gjw/my_slam/src/lidar_localization/src/publisher/loop_pose_publisher.cpp
+lidar_localization/publisher/loop_pose_publisher.hpp
+/home/gjw/my_slam/src/lidar_localization/src/publisher/lidar_localization/publisher/loop_pose_publisher.hpp
+glog/logging.h
+-
+Eigen/Dense
+-
+
 /home/gjw/my_slam/src/lidar_localization/src/publisher/odometry_publisher.cpp
 lidar_localization/publisher/odometry_publisher.hpp
 /home/gjw/my_slam/src/lidar_localization/src/publisher/lidar_localization/publisher/odometry_publisher.hpp
@@ -633,6 +715,10 @@ cmath
 /home/gjw/my_slam/src/lidar_localization/src/sensor_data/key_frame.cpp
 lidar_localization/sensor_data/key_frame.hpp
 /home/gjw/my_slam/src/lidar_localization/src/sensor_data/lidar_localization/sensor_data/key_frame.hpp
+
+/home/gjw/my_slam/src/lidar_localization/src/sensor_data/loop_pose.cpp
+lidar_localization/sensor_data/loop_pose.hpp
+/home/gjw/my_slam/src/lidar_localization/src/sensor_data/lidar_localization/sensor_data/loop_pose.hpp
 
 /home/gjw/my_slam/src/lidar_localization/src/sensor_data/pose_data.cpp
 lidar_localization/sensor_data/pose_data.hpp
@@ -665,6 +751,10 @@ lidar_localization/subscriber/key_frames_subscriber.hpp
 /home/gjw/my_slam/src/lidar_localization/src/subscriber/lidar_localization/subscriber/key_frames_subscriber.hpp
 glog/logging.h
 /home/gjw/my_slam/src/lidar_localization/src/subscriber/glog/logging.h
+
+/home/gjw/my_slam/src/lidar_localization/src/subscriber/loop_pose_subscriber.cpp
+lidar_localization/subscriber/loop_pose_subscriber.hpp
+/home/gjw/my_slam/src/lidar_localization/src/subscriber/lidar_localization/subscriber/loop_pose_subscriber.hpp
 
 /home/gjw/my_slam/src/lidar_localization/src/subscriber/odometry_subscriber.cpp
 lidar_localization/subscriber/odometry_subscriber.hpp
@@ -844,6 +934,26 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 geometry_msgs/Pose.h
+-
+
+/opt/ros/melodic/include/geometry_msgs/PoseWithCovarianceStamped.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/PoseWithCovariance.h
 -
 
 /opt/ros/melodic/include/geometry_msgs/Quaternion.h

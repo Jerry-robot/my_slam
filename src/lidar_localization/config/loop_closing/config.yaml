@@ -1,0 +1,33 @@
+# data_path: ./     #存放数据路径
+data_path: /media/gjw/Elements/slam_data
+registration_method: NDT   # 选择点云匹配方法(NDT)
+
+# 匹配时为了精度更高，应该选用scan-to-map的方式
+# map 是以当前帧为中心，前后各选取extend_frame_num个关键帧，放在一起拼接而成
+extend_frame_num: 5
+
+loop_step: 5 # 防止检测过于频繁，每隔loop_step个关键帧检测一次闭环
+detect_area: 10.0 # 检测区域，只有两帧距离小于这个值，才做闭环匹配
+
+diff_num: 100  #过于小的闭环没有意义，所以只有两帧之间的关键帧个数超出这个值再做检测
+fitness_score_limit: 0.2  # 匹配误差小于这个值才认为是有效的
+
+
+map_filter: voxel_filter
+scan_filter: voxel_filter
+
+
+# 各配置选项对应参数
+## 匹配相关参数
+NDT: 
+    res: 1.0
+    step_size: 0.1
+    trans_eps: 0.01
+    max_iter: 30
+
+## 滤波相关参数
+voxel_filter: 
+    map :
+        leaf_size : [0.3, 0.3, 0.3]
+    scan :
+        leaf_size : [0.3, 0.3, 0.3]

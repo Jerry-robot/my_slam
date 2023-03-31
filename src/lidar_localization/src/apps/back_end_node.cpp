@@ -51,7 +51,7 @@ int main(int argc, char* argv[]) {
 
         rate.sleep();
     }
-    std::string key_frame_path = "/home/gjw/my_slam/src/lidar_localization/slam_data/key_frames";
+    std::string key_frame_path = "/media/gjw/Elements/slam_data/slam_data/key_frames";
     if (boost::filesystem::is_directory(key_frame_path)) {
         boost::filesystem::remove_all(key_frame_path);
         LOG(INFO) << "后端==> 删除所有关键帧!";

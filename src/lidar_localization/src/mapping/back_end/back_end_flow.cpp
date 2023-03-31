@@ -24,8 +24,11 @@ BackEndFlow::BackEndFlow(ros::NodeHandle& nh) {
     // 前端里程计位姿
     laser_odom_sub_ptr_ = std::make_shared<OdometrySubscriber>(nh, "/laser_odom", 100000);
     // 后端优化后的位姿发布
+    loop_pose_sub_ptr_ = std::make_shared<LoopPoseSubscriber>(nh, "/loop_pose", 100000);
+
     transformed_odom_pub_ptr_ = std::make_shared<OdometryPublisher>(nh, "/transformed_odom", "/map", "/lidar", 100);
     key_frame_pub_ptr_ = std::make_shared<KeyFramePublisher>(nh, "/key_frame", "/map", 100);
+    key_gnss_pub_ptr_ = std::make_shared<KeyFramePublisher>(nh, "/key_gnss", "/map", 100);
     key_frames_pub_ptr_ = std::make_shared<KeyFramesPublisher>(nh, "/optimized_key_frames", "/map", 100);
 
     back_end_ptr_ = std::make_shared<BackEnd>();
@@ -35,14 +38,14 @@ bool BackEndFlow::Run() {
     if (!ReadData())
         return false;
     // LOG(INFO) << "后端==>ReadData";
-
+    MaybeInsertLoopPose();
     while (HasData()) {
         // LOG(INFO) << "后端==>Has Data";
         if (!ValidData())
             continue;
         // LOG(INFO) << "后端==>ValidData";
         UpdateBackEnd();
-        LOG(INFO) << "后端==>发布laser位姿、优化关键帧";
+        // LOG(INFO) << "后端==>发布laser位姿、优化关键帧";
         PublishData();
     }
 
@@ -63,7 +66,7 @@ bool BackEndFlow::ReadData() {
     cloud_sub_ptr_->ParseData(cloud_data_buff_);
     gnss_pose_sub_ptr_->ParseData(gnss_pose_data_buff_, "gnss_pose");
     laser_odom_sub_ptr_->ParseData(laser_odom_data_buff_, "laser_odom");
-
+    loop_pose_sub_ptr_->ParseData(loop_pose_data_buff_);
     return true;
 }
 
@@ -78,6 +81,17 @@ bool BackEndFlow::HasData() {
     }
     if (laser_odom_data_buff_.size() == 0)
         return false;
+
+    return true;
+}
+
+bool BackEndFlow::MaybeInsertLoopPose() {
+    while (loop_pose_data_buff_.size()>0)
+    {
+        back_end_ptr_->InsertLoopPose(loop_pose_data_buff_.front());
+        loop_pose_data_buff_.pop_front();
+
+    }
     return true;
 }
 
@@ -136,9 +150,12 @@ bool BackEndFlow::PublishData() {
     transformed_odom_pub_ptr_->Publish(current_laser_odom_data_.pose, current_laser_odom_data_.time);
 
     if (back_end_ptr_->HasNewKeyFrame()) {
-        KeyFrame key_frame;
+        KeyFrame key_frame, gnss_pose;
         back_end_ptr_->GetLatestKeyFrame(key_frame);
         key_frame_pub_ptr_->Publish(key_frame);
+
+        back_end_ptr_->GetLatestKeyGNSS(key_frame);
+        key_gnss_pub_ptr_->Publish(key_frame);
     }
 
     if (back_end_ptr_->HasNewOptimized()) {

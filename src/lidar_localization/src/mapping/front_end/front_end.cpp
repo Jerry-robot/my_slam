@@ -129,7 +129,7 @@ bool FrontEnd::Update(const CloudData& cloud_data, Eigen::Matrix4f& cloud_pose) 
     registration_ptr_->ScanMatch(filter_cloud_ptr, predict_pose, result_cloud_ptr, current_frame_.pose);
     cloud_pose = current_frame_.pose;
 
-    LOG(INFO) << "前端==>点云匹配完成!";
+    // LOG(INFO) << "前端==>点云匹配完成!";
 
     // 更新相邻帧的相对运动
     step_pose = last_pose.inverse() * current_frame_.pose;

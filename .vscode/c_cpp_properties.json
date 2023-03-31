@@ -15,7 +15,9 @@
                 "/usr/include/x86_64-linux-gnu/c++/7",
                 "${workspaceFolder}/src/lidar_localization/third_party/GeographicLib/include",
                 "${workspaceFolder}/devel/include",
-                "${workspaceFolder}/build/lidar_localization/include"
+                "${workspaceFolder}/build/lidar_localization/include",
+                "/usr/include/pcl-1.8",
+                "/usr/include/eigen3"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

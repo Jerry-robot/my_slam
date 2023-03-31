@@ -1481,6 +1481,19 @@ tf2_msgs_generate_messages_lisp/fast:
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named loop_closing_node
+
+# Build rule for target.
+loop_closing_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 loop_closing_node
+.PHONY : loop_closing_node
+
+# fast build rule for target.
+loop_closing_node/fast:
+	$(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/build
+.PHONY : loop_closing_node/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
 
 # Build rule for target.
@@ -1646,6 +1659,7 @@ help:
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... loop_closing_node"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_nodejs"

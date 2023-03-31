@@ -19,6 +19,7 @@
 
 #include "lidar_localization/sensor_data/cloud_data.hpp"
 #include "lidar_localization/sensor_data/key_frame.hpp"
+#include "lidar_localization/sensor_data/loop_pose.hpp"
 #include "lidar_localization/sensor_data/pose_data.hpp"
 
 #include "lidar_localization/models/graph_optimizer/g2o/g2o_graph_optimizer.hpp"
@@ -34,7 +35,9 @@ class BackEnd {
     bool HasNewKeyFrame();
     bool HasNewOptimized();
     void GetLatestKeyFrame(KeyFrame& key_frame);
+    void GetLatestKeyGNSS(KeyFrame& key_frame);
     bool ForceOptimize();
+    bool InsertLoopPose(const LoopPose& loop_pose);
 
    private:
     bool InitWithConfig();
@@ -43,10 +46,11 @@ class BackEnd {
     bool InitDataPath(const YAML::Node& config_node);
 
     void ResetParam();
-    bool SaveTrajectory(const PoseData& laser_odom, const PoseData& gnss_pose);
-    bool MaybeNewKeyFrame(const CloudData& cloud_data, const PoseData& laser_odom);
+    bool SavePose(std::ofstream& ofs, const Eigen::Matrix4f& pose);
+    bool MaybeNewKeyFrame(const CloudData& cloud_data, const PoseData& laser_odom, const PoseData& gnss_pose);
     bool AddNodeAndEdge(const PoseData& gnss_data);
     bool MaybeOptimized();
+    bool SaveOptimizedPose();
 
    private:
     std::string key_frames_path_ = "";
@@ -54,15 +58,18 @@ class BackEnd {
 
     std::ofstream ground_truth_ofs_;
     std::ofstream laser_odom_ofs_;
+    std::ofstream optimized_pose_ofs_;
 
     float key_frame_distance_ = 2.0;
-
     bool has_new_key_frame_ = false;
     bool has_new_optimized_ = false;
 
-    Eigen::Matrix4f last_key_pose_ = Eigen::Matrix4f::Identity();
-    KeyFrame curren_key_frame_;
+    KeyFrame current_key_frame_;
+    KeyFrame current_key_gnss_;
+
+    std::deque<Eigen::Matrix4f> optimized_pose_;
     std::deque<KeyFrame> key_frames_deque_;
+
 
     // 优化器
     std::shared_ptr<InterfaceGraphOptimizer> graph_optimizer_ptr_;

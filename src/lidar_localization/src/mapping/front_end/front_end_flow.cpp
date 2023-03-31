@@ -27,7 +27,7 @@ bool FrontEndFlow::Run() {
         if (!IsValidData())
             continue;
         UpdateLaserOdometry();
-        LOG(INFO) << "前端==>发布 Laser Odometry";
+        // LOG(INFO) << "前端==>发布 Laser Odometry";
         PublishData();
     }
 

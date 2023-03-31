@@ -1548,6 +1548,21 @@ tf2_msgs_generate_messages_lisp/fast:
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+lidar_localization/CMakeFiles/loop_closing_node.dir/rule:
+	cd /home/gjw/my_slam/build && $(MAKE) -f CMakeFiles/Makefile2 lidar_localization/CMakeFiles/loop_closing_node.dir/rule
+.PHONY : lidar_localization/CMakeFiles/loop_closing_node.dir/rule
+
+# Convenience name for target.
+loop_closing_node: lidar_localization/CMakeFiles/loop_closing_node.dir/rule
+
+.PHONY : loop_closing_node
+
+# fast build rule for target.
+loop_closing_node/fast:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/build
+.PHONY : loop_closing_node/fast
+
+# Convenience name for target.
 lidar_localization/CMakeFiles/actionlib_generate_messages_py.dir/rule:
 	cd /home/gjw/my_slam/build && $(MAKE) -f CMakeFiles/Makefile2 lidar_localization/CMakeFiles/actionlib_generate_messages_py.dir/rule
 .PHONY : lidar_localization/CMakeFiles/actionlib_generate_messages_py.dir/rule
@@ -1673,6 +1688,33 @@ src/apps/front_end_node.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/apps/front_end_node.cpp.s
 .PHONY : src/apps/front_end_node.cpp.s
 
+src/apps/loop_closing_node.o: src/apps/loop_closing_node.cpp.o
+
+.PHONY : src/apps/loop_closing_node.o
+
+# target to build an object file
+src/apps/loop_closing_node.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/apps/loop_closing_node.cpp.o
+.PHONY : src/apps/loop_closing_node.cpp.o
+
+src/apps/loop_closing_node.i: src/apps/loop_closing_node.cpp.i
+
+.PHONY : src/apps/loop_closing_node.i
+
+# target to preprocess a source file
+src/apps/loop_closing_node.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/apps/loop_closing_node.cpp.i
+.PHONY : src/apps/loop_closing_node.cpp.i
+
+src/apps/loop_closing_node.s: src/apps/loop_closing_node.cpp.s
+
+.PHONY : src/apps/loop_closing_node.s
+
+# target to generate assembly for a file
+src/apps/loop_closing_node.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/apps/loop_closing_node.cpp.s
+.PHONY : src/apps/loop_closing_node.cpp.s
+
 src/apps/viewer_node.o: src/apps/viewer_node.cpp.o
 
 .PHONY : src/apps/viewer_node.o
@@ -1710,6 +1752,7 @@ src/data_pretreat/data_pretreat_flow.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/data_pretreat/data_pretreat_flow.cpp.o
 .PHONY : src/data_pretreat/data_pretreat_flow.cpp.o
 
 src/data_pretreat/data_pretreat_flow.i: src/data_pretreat/data_pretreat_flow.cpp.i
@@ -1722,6 +1765,7 @@ src/data_pretreat/data_pretreat_flow.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/data_pretreat/data_pretreat_flow.cpp.i
 .PHONY : src/data_pretreat/data_pretreat_flow.cpp.i
 
 src/data_pretreat/data_pretreat_flow.s: src/data_pretreat/data_pretreat_flow.cpp.s
@@ -1734,6 +1778,7 @@ src/data_pretreat/data_pretreat_flow.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/data_pretreat/data_pretreat_flow.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/data_pretreat/data_pretreat_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/data_pretreat/data_pretreat_flow.cpp.s
 .PHONY : src/data_pretreat/data_pretreat_flow.cpp.s
 
 src/mapping/back_end/back_end.o: src/mapping/back_end/back_end.cpp.o
@@ -1746,6 +1791,7 @@ src/mapping/back_end/back_end.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/back_end/back_end.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/back_end/back_end.cpp.o
 .PHONY : src/mapping/back_end/back_end.cpp.o
 
 src/mapping/back_end/back_end.i: src/mapping/back_end/back_end.cpp.i
@@ -1758,6 +1804,7 @@ src/mapping/back_end/back_end.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/back_end/back_end.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/back_end/back_end.cpp.i
 .PHONY : src/mapping/back_end/back_end.cpp.i
 
 src/mapping/back_end/back_end.s: src/mapping/back_end/back_end.cpp.s
@@ -1770,6 +1817,7 @@ src/mapping/back_end/back_end.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/back_end/back_end.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/back_end/back_end.cpp.s
 .PHONY : src/mapping/back_end/back_end.cpp.s
 
 src/mapping/back_end/back_end_flow.o: src/mapping/back_end/back_end_flow.cpp.o
@@ -1782,6 +1830,7 @@ src/mapping/back_end/back_end_flow.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/back_end/back_end_flow.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/back_end/back_end_flow.cpp.o
 .PHONY : src/mapping/back_end/back_end_flow.cpp.o
 
 src/mapping/back_end/back_end_flow.i: src/mapping/back_end/back_end_flow.cpp.i
@@ -1794,6 +1843,7 @@ src/mapping/back_end/back_end_flow.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/back_end/back_end_flow.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/back_end/back_end_flow.cpp.i
 .PHONY : src/mapping/back_end/back_end_flow.cpp.i
 
 src/mapping/back_end/back_end_flow.s: src/mapping/back_end/back_end_flow.cpp.s
@@ -1806,6 +1856,7 @@ src/mapping/back_end/back_end_flow.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/back_end/back_end_flow.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/back_end/back_end_flow.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/back_end/back_end_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/back_end/back_end_flow.cpp.s
 .PHONY : src/mapping/back_end/back_end_flow.cpp.s
 
 src/mapping/front_end/front_end.o: src/mapping/front_end/front_end.cpp.o
@@ -1818,6 +1869,7 @@ src/mapping/front_end/front_end.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/front_end/front_end.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/front_end/front_end.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/front_end/front_end.cpp.o
 .PHONY : src/mapping/front_end/front_end.cpp.o
 
 src/mapping/front_end/front_end.i: src/mapping/front_end/front_end.cpp.i
@@ -1830,6 +1882,7 @@ src/mapping/front_end/front_end.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/front_end/front_end.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/front_end/front_end.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/front_end/front_end.cpp.i
 .PHONY : src/mapping/front_end/front_end.cpp.i
 
 src/mapping/front_end/front_end.s: src/mapping/front_end/front_end.cpp.s
@@ -1842,6 +1895,7 @@ src/mapping/front_end/front_end.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/front_end/front_end.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/front_end/front_end.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/front_end/front_end.cpp.s
 .PHONY : src/mapping/front_end/front_end.cpp.s
 
 src/mapping/front_end/front_end_flow.o: src/mapping/front_end/front_end_flow.cpp.o
@@ -1854,6 +1908,7 @@ src/mapping/front_end/front_end_flow.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/front_end/front_end_flow.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/front_end/front_end_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/front_end/front_end_flow.cpp.o
 .PHONY : src/mapping/front_end/front_end_flow.cpp.o
 
 src/mapping/front_end/front_end_flow.i: src/mapping/front_end/front_end_flow.cpp.i
@@ -1866,6 +1921,7 @@ src/mapping/front_end/front_end_flow.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/front_end/front_end_flow.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/front_end/front_end_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/front_end/front_end_flow.cpp.i
 .PHONY : src/mapping/front_end/front_end_flow.cpp.i
 
 src/mapping/front_end/front_end_flow.s: src/mapping/front_end/front_end_flow.cpp.s
@@ -1878,79 +1934,164 @@ src/mapping/front_end/front_end_flow.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/front_end/front_end_flow.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/front_end/front_end_flow.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/front_end/front_end_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/front_end/front_end_flow.cpp.s
 .PHONY : src/mapping/front_end/front_end_flow.cpp.s
 
-src/mapping/viewer/view.o: src/mapping/viewer/view.cpp.o
+src/mapping/loop_closing/loop_closing.o: src/mapping/loop_closing/loop_closing.cpp.o
 
-.PHONY : src/mapping/viewer/view.o
-
-# target to build an object file
-src/mapping/viewer/view.cpp.o:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/view.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/view.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/view.cpp.o
-.PHONY : src/mapping/viewer/view.cpp.o
-
-src/mapping/viewer/view.i: src/mapping/viewer/view.cpp.i
-
-.PHONY : src/mapping/viewer/view.i
-
-# target to preprocess a source file
-src/mapping/viewer/view.cpp.i:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/view.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/view.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/view.cpp.i
-.PHONY : src/mapping/viewer/view.cpp.i
-
-src/mapping/viewer/view.s: src/mapping/viewer/view.cpp.s
-
-.PHONY : src/mapping/viewer/view.s
-
-# target to generate assembly for a file
-src/mapping/viewer/view.cpp.s:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/view.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/view.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/view.cpp.s
-.PHONY : src/mapping/viewer/view.cpp.s
-
-src/mapping/viewer/view_flow.o: src/mapping/viewer/view_flow.cpp.o
-
-.PHONY : src/mapping/viewer/view_flow.o
+.PHONY : src/mapping/loop_closing/loop_closing.o
 
 # target to build an object file
-src/mapping/viewer/view_flow.cpp.o:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/view_flow.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/view_flow.cpp.o
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/view_flow.cpp.o
-.PHONY : src/mapping/viewer/view_flow.cpp.o
+src/mapping/loop_closing/loop_closing.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/loop_closing/loop_closing.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/loop_closing/loop_closing.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/loop_closing/loop_closing.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/loop_closing/loop_closing.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/loop_closing/loop_closing.cpp.o
+.PHONY : src/mapping/loop_closing/loop_closing.cpp.o
 
-src/mapping/viewer/view_flow.i: src/mapping/viewer/view_flow.cpp.i
+src/mapping/loop_closing/loop_closing.i: src/mapping/loop_closing/loop_closing.cpp.i
 
-.PHONY : src/mapping/viewer/view_flow.i
+.PHONY : src/mapping/loop_closing/loop_closing.i
 
 # target to preprocess a source file
-src/mapping/viewer/view_flow.cpp.i:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/view_flow.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/view_flow.cpp.i
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/view_flow.cpp.i
-.PHONY : src/mapping/viewer/view_flow.cpp.i
+src/mapping/loop_closing/loop_closing.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/loop_closing/loop_closing.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/loop_closing/loop_closing.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/loop_closing/loop_closing.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/loop_closing/loop_closing.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/loop_closing/loop_closing.cpp.i
+.PHONY : src/mapping/loop_closing/loop_closing.cpp.i
 
-src/mapping/viewer/view_flow.s: src/mapping/viewer/view_flow.cpp.s
+src/mapping/loop_closing/loop_closing.s: src/mapping/loop_closing/loop_closing.cpp.s
 
-.PHONY : src/mapping/viewer/view_flow.s
+.PHONY : src/mapping/loop_closing/loop_closing.s
 
 # target to generate assembly for a file
-src/mapping/viewer/view_flow.cpp.s:
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/view_flow.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/view_flow.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/view_flow.cpp.s
-	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/view_flow.cpp.s
-.PHONY : src/mapping/viewer/view_flow.cpp.s
+src/mapping/loop_closing/loop_closing.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/loop_closing/loop_closing.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/loop_closing/loop_closing.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/loop_closing/loop_closing.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/loop_closing/loop_closing.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/loop_closing/loop_closing.cpp.s
+.PHONY : src/mapping/loop_closing/loop_closing.cpp.s
+
+src/mapping/loop_closing/loop_closing_flow.o: src/mapping/loop_closing/loop_closing_flow.cpp.o
+
+.PHONY : src/mapping/loop_closing/loop_closing_flow.o
+
+# target to build an object file
+src/mapping/loop_closing/loop_closing_flow.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.o
+.PHONY : src/mapping/loop_closing/loop_closing_flow.cpp.o
+
+src/mapping/loop_closing/loop_closing_flow.i: src/mapping/loop_closing/loop_closing_flow.cpp.i
+
+.PHONY : src/mapping/loop_closing/loop_closing_flow.i
+
+# target to preprocess a source file
+src/mapping/loop_closing/loop_closing_flow.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.i
+.PHONY : src/mapping/loop_closing/loop_closing_flow.cpp.i
+
+src/mapping/loop_closing/loop_closing_flow.s: src/mapping/loop_closing/loop_closing_flow.cpp.s
+
+.PHONY : src/mapping/loop_closing/loop_closing_flow.s
+
+# target to generate assembly for a file
+src/mapping/loop_closing/loop_closing_flow.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/loop_closing/loop_closing_flow.cpp.s
+.PHONY : src/mapping/loop_closing/loop_closing_flow.cpp.s
+
+src/mapping/viewer/viewer.o: src/mapping/viewer/viewer.cpp.o
+
+.PHONY : src/mapping/viewer/viewer.o
+
+# target to build an object file
+src/mapping/viewer/viewer.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/viewer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/viewer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/viewer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/viewer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/viewer/viewer.cpp.o
+.PHONY : src/mapping/viewer/viewer.cpp.o
+
+src/mapping/viewer/viewer.i: src/mapping/viewer/viewer.cpp.i
+
+.PHONY : src/mapping/viewer/viewer.i
+
+# target to preprocess a source file
+src/mapping/viewer/viewer.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/viewer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/viewer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/viewer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/viewer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/viewer/viewer.cpp.i
+.PHONY : src/mapping/viewer/viewer.cpp.i
+
+src/mapping/viewer/viewer.s: src/mapping/viewer/viewer.cpp.s
+
+.PHONY : src/mapping/viewer/viewer.s
+
+# target to generate assembly for a file
+src/mapping/viewer/viewer.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/viewer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/viewer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/viewer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/viewer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/viewer/viewer.cpp.s
+.PHONY : src/mapping/viewer/viewer.cpp.s
+
+src/mapping/viewer/viewer_flow.o: src/mapping/viewer/viewer_flow.cpp.o
+
+.PHONY : src/mapping/viewer/viewer_flow.o
+
+# target to build an object file
+src/mapping/viewer/viewer_flow.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/viewer_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/viewer_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/viewer_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/viewer_flow.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/viewer/viewer_flow.cpp.o
+.PHONY : src/mapping/viewer/viewer_flow.cpp.o
+
+src/mapping/viewer/viewer_flow.i: src/mapping/viewer/viewer_flow.cpp.i
+
+.PHONY : src/mapping/viewer/viewer_flow.i
+
+# target to preprocess a source file
+src/mapping/viewer/viewer_flow.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/viewer_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/viewer_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/viewer_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/viewer_flow.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/viewer/viewer_flow.cpp.i
+.PHONY : src/mapping/viewer/viewer_flow.cpp.i
+
+src/mapping/viewer/viewer_flow.s: src/mapping/viewer/viewer_flow.cpp.s
+
+.PHONY : src/mapping/viewer/viewer_flow.s
+
+# target to generate assembly for a file
+src/mapping/viewer/viewer_flow.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/mapping/viewer/viewer_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/mapping/viewer/viewer_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/mapping/viewer/viewer_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/mapping/viewer/viewer_flow.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/mapping/viewer/viewer_flow.cpp.s
+.PHONY : src/mapping/viewer/viewer_flow.cpp.s
 
 src/models/cloud_filter/voxel_filter.o: src/models/cloud_filter/voxel_filter.cpp.o
 
@@ -1962,6 +2103,7 @@ src/models/cloud_filter/voxel_filter.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/cloud_filter/voxel_filter.cpp.o
 .PHONY : src/models/cloud_filter/voxel_filter.cpp.o
 
 src/models/cloud_filter/voxel_filter.i: src/models/cloud_filter/voxel_filter.cpp.i
@@ -1974,6 +2116,7 @@ src/models/cloud_filter/voxel_filter.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/cloud_filter/voxel_filter.cpp.i
 .PHONY : src/models/cloud_filter/voxel_filter.cpp.i
 
 src/models/cloud_filter/voxel_filter.s: src/models/cloud_filter/voxel_filter.cpp.s
@@ -1986,6 +2129,7 @@ src/models/cloud_filter/voxel_filter.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/cloud_filter/voxel_filter.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/cloud_filter/voxel_filter.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/cloud_filter/voxel_filter.cpp.s
 .PHONY : src/models/cloud_filter/voxel_filter.cpp.s
 
 src/models/graph_optimizer/g2o/g2o_graph_optimizer.o: src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
@@ -1998,6 +2142,7 @@ src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
 .PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.o
 
 src/models/graph_optimizer/g2o/g2o_graph_optimizer.i: src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
@@ -2010,6 +2155,7 @@ src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
 .PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.i
 
 src/models/graph_optimizer/g2o/g2o_graph_optimizer.s: src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
@@ -2022,6 +2168,7 @@ src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
 .PHONY : src/models/graph_optimizer/g2o/g2o_graph_optimizer.cpp.s
 
 src/models/graph_optimizer/interface_graph_optimizer.o: src/models/graph_optimizer/interface_graph_optimizer.cpp.o
@@ -2034,6 +2181,7 @@ src/models/graph_optimizer/interface_graph_optimizer.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.o
 .PHONY : src/models/graph_optimizer/interface_graph_optimizer.cpp.o
 
 src/models/graph_optimizer/interface_graph_optimizer.i: src/models/graph_optimizer/interface_graph_optimizer.cpp.i
@@ -2046,6 +2194,7 @@ src/models/graph_optimizer/interface_graph_optimizer.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.i
 .PHONY : src/models/graph_optimizer/interface_graph_optimizer.cpp.i
 
 src/models/graph_optimizer/interface_graph_optimizer.s: src/models/graph_optimizer/interface_graph_optimizer.cpp.s
@@ -2058,6 +2207,7 @@ src/models/graph_optimizer/interface_graph_optimizer.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/graph_optimizer/interface_graph_optimizer.cpp.s
 .PHONY : src/models/graph_optimizer/interface_graph_optimizer.cpp.s
 
 src/models/registration/ndt_registration.o: src/models/registration/ndt_registration.cpp.o
@@ -2070,6 +2220,7 @@ src/models/registration/ndt_registration.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/registration/ndt_registration.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/registration/ndt_registration.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/registration/ndt_registration.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/registration/ndt_registration.cpp.o
 .PHONY : src/models/registration/ndt_registration.cpp.o
 
 src/models/registration/ndt_registration.i: src/models/registration/ndt_registration.cpp.i
@@ -2082,6 +2233,7 @@ src/models/registration/ndt_registration.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/registration/ndt_registration.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/registration/ndt_registration.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/registration/ndt_registration.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/registration/ndt_registration.cpp.i
 .PHONY : src/models/registration/ndt_registration.cpp.i
 
 src/models/registration/ndt_registration.s: src/models/registration/ndt_registration.cpp.s
@@ -2094,6 +2246,7 @@ src/models/registration/ndt_registration.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/registration/ndt_registration.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/registration/ndt_registration.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/registration/ndt_registration.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/registration/ndt_registration.cpp.s
 .PHONY : src/models/registration/ndt_registration.cpp.s
 
 src/models/scan_adjust/distortion_adjust.o: src/models/scan_adjust/distortion_adjust.cpp.o
@@ -2106,6 +2259,7 @@ src/models/scan_adjust/distortion_adjust.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/scan_adjust/distortion_adjust.cpp.o
 .PHONY : src/models/scan_adjust/distortion_adjust.cpp.o
 
 src/models/scan_adjust/distortion_adjust.i: src/models/scan_adjust/distortion_adjust.cpp.i
@@ -2118,6 +2272,7 @@ src/models/scan_adjust/distortion_adjust.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/scan_adjust/distortion_adjust.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/scan_adjust/distortion_adjust.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/scan_adjust/distortion_adjust.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/scan_adjust/distortion_adjust.cpp.i
 .PHONY : src/models/scan_adjust/distortion_adjust.cpp.i
 
 src/models/scan_adjust/distortion_adjust.s: src/models/scan_adjust/distortion_adjust.cpp.s
@@ -2130,6 +2285,7 @@ src/models/scan_adjust/distortion_adjust.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/models/scan_adjust/distortion_adjust.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/models/scan_adjust/distortion_adjust.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/models/scan_adjust/distortion_adjust.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/models/scan_adjust/distortion_adjust.cpp.s
 .PHONY : src/models/scan_adjust/distortion_adjust.cpp.s
 
 src/publisher/cloud_publisher.o: src/publisher/cloud_publisher.cpp.o
@@ -2142,6 +2298,7 @@ src/publisher/cloud_publisher.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/cloud_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/cloud_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/cloud_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/cloud_publisher.cpp.o
 .PHONY : src/publisher/cloud_publisher.cpp.o
 
 src/publisher/cloud_publisher.i: src/publisher/cloud_publisher.cpp.i
@@ -2154,6 +2311,7 @@ src/publisher/cloud_publisher.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/cloud_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/cloud_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/cloud_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/cloud_publisher.cpp.i
 .PHONY : src/publisher/cloud_publisher.cpp.i
 
 src/publisher/cloud_publisher.s: src/publisher/cloud_publisher.cpp.s
@@ -2166,6 +2324,7 @@ src/publisher/cloud_publisher.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/cloud_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/cloud_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/cloud_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/cloud_publisher.cpp.s
 .PHONY : src/publisher/cloud_publisher.cpp.s
 
 src/publisher/key_frame_publisher.o: src/publisher/key_frame_publisher.cpp.o
@@ -2178,6 +2337,7 @@ src/publisher/key_frame_publisher.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/key_frame_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/key_frame_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/key_frame_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/key_frame_publisher.cpp.o
 .PHONY : src/publisher/key_frame_publisher.cpp.o
 
 src/publisher/key_frame_publisher.i: src/publisher/key_frame_publisher.cpp.i
@@ -2190,6 +2350,7 @@ src/publisher/key_frame_publisher.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/key_frame_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/key_frame_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/key_frame_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/key_frame_publisher.cpp.i
 .PHONY : src/publisher/key_frame_publisher.cpp.i
 
 src/publisher/key_frame_publisher.s: src/publisher/key_frame_publisher.cpp.s
@@ -2202,6 +2363,7 @@ src/publisher/key_frame_publisher.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/key_frame_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/key_frame_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/key_frame_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/key_frame_publisher.cpp.s
 .PHONY : src/publisher/key_frame_publisher.cpp.s
 
 src/publisher/key_frames_publisher.o: src/publisher/key_frames_publisher.cpp.o
@@ -2214,6 +2376,7 @@ src/publisher/key_frames_publisher.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/key_frames_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/key_frames_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/key_frames_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/key_frames_publisher.cpp.o
 .PHONY : src/publisher/key_frames_publisher.cpp.o
 
 src/publisher/key_frames_publisher.i: src/publisher/key_frames_publisher.cpp.i
@@ -2226,6 +2389,7 @@ src/publisher/key_frames_publisher.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/key_frames_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/key_frames_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/key_frames_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/key_frames_publisher.cpp.i
 .PHONY : src/publisher/key_frames_publisher.cpp.i
 
 src/publisher/key_frames_publisher.s: src/publisher/key_frames_publisher.cpp.s
@@ -2238,7 +2402,47 @@ src/publisher/key_frames_publisher.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/key_frames_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/key_frames_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/key_frames_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/key_frames_publisher.cpp.s
 .PHONY : src/publisher/key_frames_publisher.cpp.s
+
+src/publisher/loop_pose_publisher.o: src/publisher/loop_pose_publisher.cpp.o
+
+.PHONY : src/publisher/loop_pose_publisher.o
+
+# target to build an object file
+src/publisher/loop_pose_publisher.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/publisher/loop_pose_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/loop_pose_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/loop_pose_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/loop_pose_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/loop_pose_publisher.cpp.o
+.PHONY : src/publisher/loop_pose_publisher.cpp.o
+
+src/publisher/loop_pose_publisher.i: src/publisher/loop_pose_publisher.cpp.i
+
+.PHONY : src/publisher/loop_pose_publisher.i
+
+# target to preprocess a source file
+src/publisher/loop_pose_publisher.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/publisher/loop_pose_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/loop_pose_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/loop_pose_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/loop_pose_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/loop_pose_publisher.cpp.i
+.PHONY : src/publisher/loop_pose_publisher.cpp.i
+
+src/publisher/loop_pose_publisher.s: src/publisher/loop_pose_publisher.cpp.s
+
+.PHONY : src/publisher/loop_pose_publisher.s
+
+# target to generate assembly for a file
+src/publisher/loop_pose_publisher.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/publisher/loop_pose_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/loop_pose_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/loop_pose_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/loop_pose_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/loop_pose_publisher.cpp.s
+.PHONY : src/publisher/loop_pose_publisher.cpp.s
 
 src/publisher/odometry_publisher.o: src/publisher/odometry_publisher.cpp.o
 
@@ -2250,6 +2454,7 @@ src/publisher/odometry_publisher.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/odometry_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/odometry_publisher.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/odometry_publisher.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/odometry_publisher.cpp.o
 .PHONY : src/publisher/odometry_publisher.cpp.o
 
 src/publisher/odometry_publisher.i: src/publisher/odometry_publisher.cpp.i
@@ -2262,6 +2467,7 @@ src/publisher/odometry_publisher.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/odometry_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/odometry_publisher.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/odometry_publisher.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/odometry_publisher.cpp.i
 .PHONY : src/publisher/odometry_publisher.cpp.i
 
 src/publisher/odometry_publisher.s: src/publisher/odometry_publisher.cpp.s
@@ -2274,6 +2480,7 @@ src/publisher/odometry_publisher.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/publisher/odometry_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/publisher/odometry_publisher.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/publisher/odometry_publisher.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/publisher/odometry_publisher.cpp.s
 .PHONY : src/publisher/odometry_publisher.cpp.s
 
 src/sensor_data/gnss_data.o: src/sensor_data/gnss_data.cpp.o
@@ -2286,6 +2493,7 @@ src/sensor_data/gnss_data.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/gnss_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/gnss_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/gnss_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/gnss_data.cpp.o
 .PHONY : src/sensor_data/gnss_data.cpp.o
 
 src/sensor_data/gnss_data.i: src/sensor_data/gnss_data.cpp.i
@@ -2298,6 +2506,7 @@ src/sensor_data/gnss_data.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/gnss_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/gnss_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/gnss_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/gnss_data.cpp.i
 .PHONY : src/sensor_data/gnss_data.cpp.i
 
 src/sensor_data/gnss_data.s: src/sensor_data/gnss_data.cpp.s
@@ -2310,6 +2519,7 @@ src/sensor_data/gnss_data.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/gnss_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/gnss_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/gnss_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/gnss_data.cpp.s
 .PHONY : src/sensor_data/gnss_data.cpp.s
 
 src/sensor_data/imu_data.o: src/sensor_data/imu_data.cpp.o
@@ -2322,6 +2532,7 @@ src/sensor_data/imu_data.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/imu_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/imu_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/imu_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/imu_data.cpp.o
 .PHONY : src/sensor_data/imu_data.cpp.o
 
 src/sensor_data/imu_data.i: src/sensor_data/imu_data.cpp.i
@@ -2334,6 +2545,7 @@ src/sensor_data/imu_data.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/imu_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/imu_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/imu_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/imu_data.cpp.i
 .PHONY : src/sensor_data/imu_data.cpp.i
 
 src/sensor_data/imu_data.s: src/sensor_data/imu_data.cpp.s
@@ -2346,6 +2558,7 @@ src/sensor_data/imu_data.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/imu_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/imu_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/imu_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/imu_data.cpp.s
 .PHONY : src/sensor_data/imu_data.cpp.s
 
 src/sensor_data/key_frame.o: src/sensor_data/key_frame.cpp.o
@@ -2358,6 +2571,7 @@ src/sensor_data/key_frame.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/key_frame.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/key_frame.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/key_frame.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/key_frame.cpp.o
 .PHONY : src/sensor_data/key_frame.cpp.o
 
 src/sensor_data/key_frame.i: src/sensor_data/key_frame.cpp.i
@@ -2370,6 +2584,7 @@ src/sensor_data/key_frame.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/key_frame.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/key_frame.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/key_frame.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/key_frame.cpp.i
 .PHONY : src/sensor_data/key_frame.cpp.i
 
 src/sensor_data/key_frame.s: src/sensor_data/key_frame.cpp.s
@@ -2382,7 +2597,47 @@ src/sensor_data/key_frame.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/key_frame.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/key_frame.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/key_frame.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/key_frame.cpp.s
 .PHONY : src/sensor_data/key_frame.cpp.s
+
+src/sensor_data/loop_pose.o: src/sensor_data/loop_pose.cpp.o
+
+.PHONY : src/sensor_data/loop_pose.o
+
+# target to build an object file
+src/sensor_data/loop_pose.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/sensor_data/loop_pose.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/loop_pose.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/loop_pose.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/loop_pose.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/loop_pose.cpp.o
+.PHONY : src/sensor_data/loop_pose.cpp.o
+
+src/sensor_data/loop_pose.i: src/sensor_data/loop_pose.cpp.i
+
+.PHONY : src/sensor_data/loop_pose.i
+
+# target to preprocess a source file
+src/sensor_data/loop_pose.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/sensor_data/loop_pose.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/loop_pose.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/loop_pose.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/loop_pose.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/loop_pose.cpp.i
+.PHONY : src/sensor_data/loop_pose.cpp.i
+
+src/sensor_data/loop_pose.s: src/sensor_data/loop_pose.cpp.s
+
+.PHONY : src/sensor_data/loop_pose.s
+
+# target to generate assembly for a file
+src/sensor_data/loop_pose.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/sensor_data/loop_pose.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/loop_pose.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/loop_pose.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/loop_pose.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/loop_pose.cpp.s
+.PHONY : src/sensor_data/loop_pose.cpp.s
 
 src/sensor_data/pose_data.o: src/sensor_data/pose_data.cpp.o
 
@@ -2394,6 +2649,7 @@ src/sensor_data/pose_data.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/pose_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/pose_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/pose_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/pose_data.cpp.o
 .PHONY : src/sensor_data/pose_data.cpp.o
 
 src/sensor_data/pose_data.i: src/sensor_data/pose_data.cpp.i
@@ -2406,6 +2662,7 @@ src/sensor_data/pose_data.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/pose_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/pose_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/pose_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/pose_data.cpp.i
 .PHONY : src/sensor_data/pose_data.cpp.i
 
 src/sensor_data/pose_data.s: src/sensor_data/pose_data.cpp.s
@@ -2418,6 +2675,7 @@ src/sensor_data/pose_data.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/pose_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/pose_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/pose_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/pose_data.cpp.s
 .PHONY : src/sensor_data/pose_data.cpp.s
 
 src/sensor_data/velocity_data.o: src/sensor_data/velocity_data.cpp.o
@@ -2430,6 +2688,7 @@ src/sensor_data/velocity_data.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/velocity_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/velocity_data.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/velocity_data.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/velocity_data.cpp.o
 .PHONY : src/sensor_data/velocity_data.cpp.o
 
 src/sensor_data/velocity_data.i: src/sensor_data/velocity_data.cpp.i
@@ -2442,6 +2701,7 @@ src/sensor_data/velocity_data.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/velocity_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/velocity_data.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/velocity_data.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/velocity_data.cpp.i
 .PHONY : src/sensor_data/velocity_data.cpp.i
 
 src/sensor_data/velocity_data.s: src/sensor_data/velocity_data.cpp.s
@@ -2454,6 +2714,7 @@ src/sensor_data/velocity_data.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/sensor_data/velocity_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/sensor_data/velocity_data.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/sensor_data/velocity_data.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/sensor_data/velocity_data.cpp.s
 .PHONY : src/sensor_data/velocity_data.cpp.s
 
 src/subscriber/cloud_subscriber.o: src/subscriber/cloud_subscriber.cpp.o
@@ -2466,6 +2727,7 @@ src/subscriber/cloud_subscriber.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/cloud_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/cloud_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/cloud_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/cloud_subscriber.cpp.o
 .PHONY : src/subscriber/cloud_subscriber.cpp.o
 
 src/subscriber/cloud_subscriber.i: src/subscriber/cloud_subscriber.cpp.i
@@ -2478,6 +2740,7 @@ src/subscriber/cloud_subscriber.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/cloud_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/cloud_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/cloud_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/cloud_subscriber.cpp.i
 .PHONY : src/subscriber/cloud_subscriber.cpp.i
 
 src/subscriber/cloud_subscriber.s: src/subscriber/cloud_subscriber.cpp.s
@@ -2490,6 +2753,7 @@ src/subscriber/cloud_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/cloud_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/cloud_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/cloud_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/cloud_subscriber.cpp.s
 .PHONY : src/subscriber/cloud_subscriber.cpp.s
 
 src/subscriber/gnss_subscriber.o: src/subscriber/gnss_subscriber.cpp.o
@@ -2502,6 +2766,7 @@ src/subscriber/gnss_subscriber.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/gnss_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/gnss_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/gnss_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/gnss_subscriber.cpp.o
 .PHONY : src/subscriber/gnss_subscriber.cpp.o
 
 src/subscriber/gnss_subscriber.i: src/subscriber/gnss_subscriber.cpp.i
@@ -2514,6 +2779,7 @@ src/subscriber/gnss_subscriber.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/gnss_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/gnss_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/gnss_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/gnss_subscriber.cpp.i
 .PHONY : src/subscriber/gnss_subscriber.cpp.i
 
 src/subscriber/gnss_subscriber.s: src/subscriber/gnss_subscriber.cpp.s
@@ -2526,6 +2792,7 @@ src/subscriber/gnss_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/gnss_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/gnss_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/gnss_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/gnss_subscriber.cpp.s
 .PHONY : src/subscriber/gnss_subscriber.cpp.s
 
 src/subscriber/imu_subscriber.o: src/subscriber/imu_subscriber.cpp.o
@@ -2538,6 +2805,7 @@ src/subscriber/imu_subscriber.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/imu_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/imu_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/imu_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/imu_subscriber.cpp.o
 .PHONY : src/subscriber/imu_subscriber.cpp.o
 
 src/subscriber/imu_subscriber.i: src/subscriber/imu_subscriber.cpp.i
@@ -2550,6 +2818,7 @@ src/subscriber/imu_subscriber.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/imu_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/imu_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/imu_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/imu_subscriber.cpp.i
 .PHONY : src/subscriber/imu_subscriber.cpp.i
 
 src/subscriber/imu_subscriber.s: src/subscriber/imu_subscriber.cpp.s
@@ -2562,6 +2831,7 @@ src/subscriber/imu_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/imu_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/imu_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/imu_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/imu_subscriber.cpp.s
 .PHONY : src/subscriber/imu_subscriber.cpp.s
 
 src/subscriber/key_frame_subscriber.o: src/subscriber/key_frame_subscriber.cpp.o
@@ -2574,6 +2844,7 @@ src/subscriber/key_frame_subscriber.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/key_frame_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/key_frame_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/key_frame_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/key_frame_subscriber.cpp.o
 .PHONY : src/subscriber/key_frame_subscriber.cpp.o
 
 src/subscriber/key_frame_subscriber.i: src/subscriber/key_frame_subscriber.cpp.i
@@ -2586,6 +2857,7 @@ src/subscriber/key_frame_subscriber.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/key_frame_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/key_frame_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/key_frame_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/key_frame_subscriber.cpp.i
 .PHONY : src/subscriber/key_frame_subscriber.cpp.i
 
 src/subscriber/key_frame_subscriber.s: src/subscriber/key_frame_subscriber.cpp.s
@@ -2598,6 +2870,7 @@ src/subscriber/key_frame_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/key_frame_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/key_frame_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/key_frame_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/key_frame_subscriber.cpp.s
 .PHONY : src/subscriber/key_frame_subscriber.cpp.s
 
 src/subscriber/key_frames_subscriber.o: src/subscriber/key_frames_subscriber.cpp.o
@@ -2610,6 +2883,7 @@ src/subscriber/key_frames_subscriber.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/key_frames_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/key_frames_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/key_frames_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/key_frames_subscriber.cpp.o
 .PHONY : src/subscriber/key_frames_subscriber.cpp.o
 
 src/subscriber/key_frames_subscriber.i: src/subscriber/key_frames_subscriber.cpp.i
@@ -2622,6 +2896,7 @@ src/subscriber/key_frames_subscriber.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/key_frames_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/key_frames_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/key_frames_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/key_frames_subscriber.cpp.i
 .PHONY : src/subscriber/key_frames_subscriber.cpp.i
 
 src/subscriber/key_frames_subscriber.s: src/subscriber/key_frames_subscriber.cpp.s
@@ -2634,7 +2909,47 @@ src/subscriber/key_frames_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/key_frames_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/key_frames_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/key_frames_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/key_frames_subscriber.cpp.s
 .PHONY : src/subscriber/key_frames_subscriber.cpp.s
+
+src/subscriber/loop_pose_subscriber.o: src/subscriber/loop_pose_subscriber.cpp.o
+
+.PHONY : src/subscriber/loop_pose_subscriber.o
+
+# target to build an object file
+src/subscriber/loop_pose_subscriber.cpp.o:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/subscriber/loop_pose_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/loop_pose_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/loop_pose_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/loop_pose_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/loop_pose_subscriber.cpp.o
+.PHONY : src/subscriber/loop_pose_subscriber.cpp.o
+
+src/subscriber/loop_pose_subscriber.i: src/subscriber/loop_pose_subscriber.cpp.i
+
+.PHONY : src/subscriber/loop_pose_subscriber.i
+
+# target to preprocess a source file
+src/subscriber/loop_pose_subscriber.cpp.i:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/subscriber/loop_pose_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/loop_pose_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/loop_pose_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/loop_pose_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/loop_pose_subscriber.cpp.i
+.PHONY : src/subscriber/loop_pose_subscriber.cpp.i
+
+src/subscriber/loop_pose_subscriber.s: src/subscriber/loop_pose_subscriber.cpp.s
+
+.PHONY : src/subscriber/loop_pose_subscriber.s
+
+# target to generate assembly for a file
+src/subscriber/loop_pose_subscriber.cpp.s:
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/viewer_node.dir/build.make lidar_localization/CMakeFiles/viewer_node.dir/src/subscriber/loop_pose_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/loop_pose_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/loop_pose_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/loop_pose_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/loop_pose_subscriber.cpp.s
+.PHONY : src/subscriber/loop_pose_subscriber.cpp.s
 
 src/subscriber/odometry_subscriber.o: src/subscriber/odometry_subscriber.cpp.o
 
@@ -2646,6 +2961,7 @@ src/subscriber/odometry_subscriber.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/odometry_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/odometry_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/odometry_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/odometry_subscriber.cpp.o
 .PHONY : src/subscriber/odometry_subscriber.cpp.o
 
 src/subscriber/odometry_subscriber.i: src/subscriber/odometry_subscriber.cpp.i
@@ -2658,6 +2974,7 @@ src/subscriber/odometry_subscriber.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/odometry_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/odometry_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/odometry_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/odometry_subscriber.cpp.i
 .PHONY : src/subscriber/odometry_subscriber.cpp.i
 
 src/subscriber/odometry_subscriber.s: src/subscriber/odometry_subscriber.cpp.s
@@ -2670,6 +2987,7 @@ src/subscriber/odometry_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/odometry_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/odometry_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/odometry_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/odometry_subscriber.cpp.s
 .PHONY : src/subscriber/odometry_subscriber.cpp.s
 
 src/subscriber/velocity_subscriber.o: src/subscriber/velocity_subscriber.cpp.o
@@ -2682,6 +3000,7 @@ src/subscriber/velocity_subscriber.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/velocity_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/velocity_subscriber.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/velocity_subscriber.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/velocity_subscriber.cpp.o
 .PHONY : src/subscriber/velocity_subscriber.cpp.o
 
 src/subscriber/velocity_subscriber.i: src/subscriber/velocity_subscriber.cpp.i
@@ -2694,6 +3013,7 @@ src/subscriber/velocity_subscriber.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/velocity_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/velocity_subscriber.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/velocity_subscriber.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/velocity_subscriber.cpp.i
 .PHONY : src/subscriber/velocity_subscriber.cpp.i
 
 src/subscriber/velocity_subscriber.s: src/subscriber/velocity_subscriber.cpp.s
@@ -2706,6 +3026,7 @@ src/subscriber/velocity_subscriber.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/subscriber/velocity_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/subscriber/velocity_subscriber.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/subscriber/velocity_subscriber.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/subscriber/velocity_subscriber.cpp.s
 .PHONY : src/subscriber/velocity_subscriber.cpp.s
 
 src/tf_listener/tf_listener.o: src/tf_listener/tf_listener.cpp.o
@@ -2718,6 +3039,7 @@ src/tf_listener/tf_listener.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/tf_listener/tf_listener.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/tf_listener/tf_listener.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/tf_listener/tf_listener.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/tf_listener/tf_listener.cpp.o
 .PHONY : src/tf_listener/tf_listener.cpp.o
 
 src/tf_listener/tf_listener.i: src/tf_listener/tf_listener.cpp.i
@@ -2730,6 +3052,7 @@ src/tf_listener/tf_listener.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/tf_listener/tf_listener.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/tf_listener/tf_listener.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/tf_listener/tf_listener.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/tf_listener/tf_listener.cpp.i
 .PHONY : src/tf_listener/tf_listener.cpp.i
 
 src/tf_listener/tf_listener.s: src/tf_listener/tf_listener.cpp.s
@@ -2742,6 +3065,7 @@ src/tf_listener/tf_listener.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/tf_listener/tf_listener.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/tf_listener/tf_listener.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/tf_listener/tf_listener.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/tf_listener/tf_listener.cpp.s
 .PHONY : src/tf_listener/tf_listener.cpp.s
 
 src/tools/file_manager.o: src/tools/file_manager.cpp.o
@@ -2754,6 +3078,7 @@ src/tools/file_manager.cpp.o:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/tools/file_manager.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/tools/file_manager.cpp.o
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/tools/file_manager.cpp.o
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/tools/file_manager.cpp.o
 .PHONY : src/tools/file_manager.cpp.o
 
 src/tools/file_manager.i: src/tools/file_manager.cpp.i
@@ -2766,6 +3091,7 @@ src/tools/file_manager.cpp.i:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/tools/file_manager.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/tools/file_manager.cpp.i
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/tools/file_manager.cpp.i
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/tools/file_manager.cpp.i
 .PHONY : src/tools/file_manager.cpp.i
 
 src/tools/file_manager.s: src/tools/file_manager.cpp.s
@@ -2778,6 +3104,7 @@ src/tools/file_manager.cpp.s:
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/data_pretreat_node.dir/build.make lidar_localization/CMakeFiles/data_pretreat_node.dir/src/tools/file_manager.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/front_end_node.dir/build.make lidar_localization/CMakeFiles/front_end_node.dir/src/tools/file_manager.cpp.s
 	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/back_end_node.dir/build.make lidar_localization/CMakeFiles/back_end_node.dir/src/tools/file_manager.cpp.s
+	cd /home/gjw/my_slam/build && $(MAKE) -f lidar_localization/CMakeFiles/loop_closing_node.dir/build.make lidar_localization/CMakeFiles/loop_closing_node.dir/src/tools/file_manager.cpp.s
 .PHONY : src/tools/file_manager.cpp.s
 
 # Help Target
@@ -2885,6 +3212,7 @@ help:
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... loop_closing_node"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_nodejs"
@@ -2897,6 +3225,9 @@ help:
 	@echo "... src/apps/front_end_node.o"
 	@echo "... src/apps/front_end_node.i"
 	@echo "... src/apps/front_end_node.s"
+	@echo "... src/apps/loop_closing_node.o"
+	@echo "... src/apps/loop_closing_node.i"
+	@echo "... src/apps/loop_closing_node.s"
 	@echo "... src/apps/viewer_node.o"
 	@echo "... src/apps/viewer_node.i"
 	@echo "... src/apps/viewer_node.s"
@@ -2915,12 +3246,18 @@ help:
 	@echo "... src/mapping/front_end/front_end_flow.o"
 	@echo "... src/mapping/front_end/front_end_flow.i"
 	@echo "... src/mapping/front_end/front_end_flow.s"
-	@echo "... src/mapping/viewer/view.o"
-	@echo "... src/mapping/viewer/view.i"
-	@echo "... src/mapping/viewer/view.s"
-	@echo "... src/mapping/viewer/view_flow.o"
-	@echo "... src/mapping/viewer/view_flow.i"
-	@echo "... src/mapping/viewer/view_flow.s"
+	@echo "... src/mapping/loop_closing/loop_closing.o"
+	@echo "... src/mapping/loop_closing/loop_closing.i"
+	@echo "... src/mapping/loop_closing/loop_closing.s"
+	@echo "... src/mapping/loop_closing/loop_closing_flow.o"
+	@echo "... src/mapping/loop_closing/loop_closing_flow.i"
+	@echo "... src/mapping/loop_closing/loop_closing_flow.s"
+	@echo "... src/mapping/viewer/viewer.o"
+	@echo "... src/mapping/viewer/viewer.i"
+	@echo "... src/mapping/viewer/viewer.s"
+	@echo "... src/mapping/viewer/viewer_flow.o"
+	@echo "... src/mapping/viewer/viewer_flow.i"
+	@echo "... src/mapping/viewer/viewer_flow.s"
 	@echo "... src/models/cloud_filter/voxel_filter.o"
 	@echo "... src/models/cloud_filter/voxel_filter.i"
 	@echo "... src/models/cloud_filter/voxel_filter.s"
@@ -2945,6 +3282,9 @@ help:
 	@echo "... src/publisher/key_frames_publisher.o"
 	@echo "... src/publisher/key_frames_publisher.i"
 	@echo "... src/publisher/key_frames_publisher.s"
+	@echo "... src/publisher/loop_pose_publisher.o"
+	@echo "... src/publisher/loop_pose_publisher.i"
+	@echo "... src/publisher/loop_pose_publisher.s"
 	@echo "... src/publisher/odometry_publisher.o"
 	@echo "... src/publisher/odometry_publisher.i"
 	@echo "... src/publisher/odometry_publisher.s"
@@ -2957,6 +3297,9 @@ help:
 	@echo "... src/sensor_data/key_frame.o"
 	@echo "... src/sensor_data/key_frame.i"
 	@echo "... src/sensor_data/key_frame.s"
+	@echo "... src/sensor_data/loop_pose.o"
+	@echo "... src/sensor_data/loop_pose.i"
+	@echo "... src/sensor_data/loop_pose.s"
 	@echo "... src/sensor_data/pose_data.o"
 	@echo "... src/sensor_data/pose_data.i"
 	@echo "... src/sensor_data/pose_data.s"
@@ -2978,6 +3321,9 @@ help:
 	@echo "... src/subscriber/key_frames_subscriber.o"
 	@echo "... src/subscriber/key_frames_subscriber.i"
 	@echo "... src/subscriber/key_frames_subscriber.s"
+	@echo "... src/subscriber/loop_pose_subscriber.o"
+	@echo "... src/subscriber/loop_pose_subscriber.i"
+	@echo "... src/subscriber/loop_pose_subscriber.s"
 	@echo "... src/subscriber/odometry_subscriber.o"
 	@echo "... src/subscriber/odometry_subscriber.i"
 	@echo "... src/subscriber/odometry_subscriber.s"

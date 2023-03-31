@@ -38,6 +38,8 @@ class ViewerFlow {
     bool ValidData();
     bool UpdateViewer();
     bool PublishData();
+    bool PublishLocalData();
+    bool PublishGlobalData();
 
   private:
     // subscriber
