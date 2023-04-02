@@ -25,6 +25,20 @@ DataPretreatFlow::DataPretreatFlow(ros::NodeHandle& nh) {
     distortion_adjust_ptr_ = std::make_shared<DistortionAdjust>();
 }
 
+DataPretreatFlow::DataPretreatFlow(ros::NodeHandle& nh, std::string cloud_topic) {
+    imu_sub_ptr_ = std::make_shared<IMUSubscriber>(nh, "/kitti/oxts/imu", 1000000);
+    gnss_sub_ptr_ = std::make_shared<GNSSSubscriber>(nh, "/kitti/oxts/gps/fix", 1000000);
+    cloud_sub_ptr_ = std::make_shared<CloudSubscriber>(nh, "/kitti/velo/pointcloud", 10000);
+    velocity_sub_ptr_ = std::make_shared<VelocitySubscriber>(nh, "/kitti/oxts/gps/vel", 100000);
+    imu_to_lidar_sub_ptr_ = std::make_shared<TFListener>(nh, "/imu_link", "/velo_link");
+
+    gnss_odom_pub_ptr_ = std::make_shared<OdometryPublisher>(nh, "/synced_gnss", "/map", "/velo_link", 100);
+    cloud_pub_ptr_ = std::make_shared<CloudPublisher>(nh, cloud_topic, "/velo_link", 100);
+
+    distortion_adjust_ptr_ = std::make_shared<DistortionAdjust>();
+}
+
+
 bool DataPretreatFlow::Run() {
     if (!ReadData())
         return false;

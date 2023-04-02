@@ -1,0 +1,26 @@
+Log file created at: 2023/04/02 16:36:59
+Running on machine: gjw-cpu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0402 16:36:59.950740 26360 loop_closing.cpp:54] extend_frame_num: 5
+loop_step: 5
+diff_num: 100
+detect_area: 10
+fitness_score_limit: 0.2
+
+I0402 16:36:59.951278 26360 loop_closing.cpp:91] scan 选择的滤波方法为: voxel_filter
+I0402 16:36:59.951347 26360 voxel_filter.cpp:30] Voxel Filter 的参数为：
+0.3, 0.3, 0.3
+
+I0402 16:36:59.951395 26360 loop_closing.cpp:91] map 选择的滤波方法为: voxel_filter
+I0402 16:36:59.951444 26360 voxel_filter.cpp:30] Voxel Filter 的参数为：
+0.3, 0.3, 0.3
+
+I0402 16:36:59.951483 26360 loop_closing.cpp:77] 选择的点云匹配方法为：NDT
+I0402 16:37:00.083917 26360 ndt_registration.cpp:34] NDT 的参数配置为：
+res: 1
+step_size: 0.1
+trans_eps: 0.01
+max_iter: 30
+
+I0402 16:37:00.083961 26360 loop_closing.cpp:27] InitWithConfig finish!
+I0402 16:37:00.083967 26360 loop_closing_node.cpp:28] 回环==>启动回环模块！

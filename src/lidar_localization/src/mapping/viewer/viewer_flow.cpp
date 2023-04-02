@@ -43,6 +43,23 @@ ViewerFlow::ViewerFlow(ros::NodeHandle& nh) {
     viewer_ptr_ = std::make_shared<Viewer>();
 }
 
+ViewerFlow::ViewerFlow(ros::NodeHandle& nh, std::string cloud_topic) {
+    // subscriber
+    cloud_sub_ptr_ = std::make_shared<CloudSubscriber>(nh, cloud_topic, 100000);
+    key_frame_sub_ptr_ = std::make_shared<KeyFrameSubscriber>(nh, "/key_frame", 100000);
+    transformed_odom_sub_ptr_ = std::make_shared<OdometrySubscriber>(nh, "/transformed_odom", 100000);
+    optimized_key_frames_sub_ptr_ = std::make_shared<KeyFramesSubscriber>(nh, "/optimized_key_frames", 100000);
+    // publisher
+    optimized_odom_pub_ptr_ = std::make_shared<OdometryPublisher>(nh, "/optimized_odom", "/map", "/lidar", 100);
+    current_scan_pub_ptr_ = std::make_shared<CloudPublisher>(nh, "/current_scan", "/map", 100);
+    global_map_pub_ptr_ = std::make_shared<CloudPublisher>(nh, "/global_map", "/map", 100);
+    local_map_pub_ptr_ = std::make_shared<CloudPublisher>(nh, "/local_map", "/map", 100);
+    // viewer
+    viewer_ptr_ = std::make_shared<Viewer>();
+}
+
+
+
 bool ViewerFlow::Run() {
     if (!ReadData())
         return false;

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <param name="cloud_topic" type="string"  value="/velodyne_points"/>
+    <param name="odom_topic" type="string"  value="/aft_mapped_to_init"/>
+    
+    <include file="$(find aloam_velodyne)/launch/aloam_velodyne_HDL_64.launch"/>
+    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidar_localization)/rviz/mapping.rviz"/>
+
+    <node name="data_pretreat_node" pkg="lidar_localization" type="data_pretreat_node"  output="log"/>
+
+    <node name="back_end_node" pkg="lidar_localization" type="back_end_node"  output="screen"/>
+
+    <node name="loop_closing_node" pkg="lidar_localization" type="loop_closing_node"  output="screen"/>
+    
+    <node name="viewer_node" pkg="lidar_localization" type="viewer_node"  output="log"/>
+
+</launch>

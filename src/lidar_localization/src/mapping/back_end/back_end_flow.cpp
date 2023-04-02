@@ -34,6 +34,26 @@ BackEndFlow::BackEndFlow(ros::NodeHandle& nh) {
     back_end_ptr_ = std::make_shared<BackEnd>();
 }
 
+BackEndFlow::BackEndFlow(ros::NodeHandle& nh, std::string cloud_topic, std::string odom_topic) {
+    cloud_sub_ptr_ = std::make_shared<CloudSubscriber>(nh, cloud_topic, 100000);
+    // 组合导航位姿
+    gnss_pose_sub_ptr_ = std::make_shared<OdometrySubscriber>(nh, "/synced_gnss", 100000);
+    // 前端里程计位姿
+    laser_odom_sub_ptr_ = std::make_shared<OdometrySubscriber>(nh, odom_topic, 100000);
+    // 后端优化后的位姿发布
+    loop_pose_sub_ptr_ = std::make_shared<LoopPoseSubscriber>(nh, "/loop_pose", 100000);
+
+    transformed_odom_pub_ptr_ = std::make_shared<OdometryPublisher>(nh, "/transformed_odom", "/map", "/lidar", 100);
+    key_frame_pub_ptr_ = std::make_shared<KeyFramePublisher>(nh, "/key_frame", "/map", 100);
+    key_gnss_pub_ptr_ = std::make_shared<KeyFramePublisher>(nh, "/key_gnss", "/map", 100);
+    key_frames_pub_ptr_ = std::make_shared<KeyFramesPublisher>(nh, "/optimized_key_frames", "/map", 100);
+
+    back_end_ptr_ = std::make_shared<BackEnd>();
+}
+
+
+
+
 bool BackEndFlow::Run() {
     if (!ReadData())
         return false;

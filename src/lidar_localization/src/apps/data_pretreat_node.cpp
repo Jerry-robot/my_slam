@@ -23,8 +23,10 @@ int main(int argc, char *argv[])
 
     ros::init(argc, argv, "data_pretreat_node");
     ros::NodeHandle nh;
+    std::string cloud_topic;
+    nh.param<std::string>("cloud_topic", cloud_topic, "/synced_cloud");
 
-    std::shared_ptr<DataPretreatFlow> data_pretreat_ptr = std::make_shared<DataPretreatFlow>(nh);
+    std::shared_ptr<DataPretreatFlow> data_pretreat_ptr = std::make_shared<DataPretreatFlow>(nh, cloud_topic);
     LOG(INFO)<<"”处理==>启动数据预处理模块！";
     ros::Rate rate(100);
     while (ros::ok())

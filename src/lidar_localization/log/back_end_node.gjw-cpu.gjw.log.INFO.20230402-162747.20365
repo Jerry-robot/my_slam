@@ -1,0 +1,12 @@
+Log file created at: 2023/04/02 16:27:47
+Running on machine: gjw-cpu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0402 16:27:47.281083 20365 file_manager.cpp:55] 关键帧点云存放地址: 
+/media/gjw/Elements/slam_data/slam_data/key_frames
+
+I0402 16:27:47.281322 20365 file_manager.cpp:42] 轨迹文件存放地址: 
+/media/gjw/Elements/slam_data/slam_data/trajectory
+
+I0402 16:27:47.281878 20365 back_end.cpp:80] 后端优化选择的优化器为：g2o
+I0402 16:27:47.282192 20365 back_end_node.cpp:47] 后端==>启动后端优化模块！
+I0402 16:27:47.542601 20365 back_end_node.cpp:62] 后端==> 删除所有关键帧!

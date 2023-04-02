@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidar_localization)/rviz/front_end.rviz"/>
-
-    <node name="front_end_flow_node" pkg="lidar_localization" type="front_end_flow_node"  output="screen"/>
-    
-</launch>

@@ -36,7 +36,9 @@ int main(int argc, char* argv[]) {
 
     ros::init(argc, argv, "viewer_flow_node");
     ros::NodeHandle nh;
-    _front_end_flow_ptr = std::make_shared<ViewerFlow>(nh);
+    std::string cloud_topic;
+    nh.param<std::string>("cloud_topic", cloud_topic, "/synced_cloud");
+    _front_end_flow_ptr = std::make_shared<ViewerFlow>(nh, cloud_topic);
     ros::ServiceServer service = nh.advertiseService("save_map", save_map_callback);
 
     LOG(INFO) << "可视==>启动可视化模块！";

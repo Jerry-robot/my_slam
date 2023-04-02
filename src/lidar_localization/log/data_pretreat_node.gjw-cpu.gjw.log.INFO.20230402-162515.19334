@@ -1,0 +1,6 @@
+Log file created at: 2023/04/02 16:25:15
+Running on machine: gjw-cpu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0402 16:25:15.589154 19334 data_pretreat_node.cpp:30] ”处理==>启动数据预处理模块！
+I0402 16:25:16.950915 19334 data_pretreat_flow.cpp:115] 初始化 imu to lidar 成功！
+I0402 16:25:16.950971 19334 data_pretreat_flow.cpp:118] 初始化 imu to lidar 失败！
