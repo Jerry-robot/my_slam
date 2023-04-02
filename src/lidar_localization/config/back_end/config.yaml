@@ -9,8 +9,8 @@ graph_optimizer_type: g2o
 use_gnss: true
 use_loop_close: true
 
-optimize_step_with_key_frame: 100 # 没有其他消息时，每隔step 发送一次优化位姿
-optimize_step_with_gnss: 100 # 每累计step 个gnss观测时，优化一次
+optimize_step_with_key_frame: 80 # 没有其他消息时，每隔step 发送一次优化位姿
+optimize_step_with_gnss: 80 # 每累计step 个gnss观测时，优化一次
 optimize_step_with_loop: 5  # 每累计step 个闭环约束时优化一次
 
 g2o_param:

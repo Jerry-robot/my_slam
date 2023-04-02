@@ -11,7 +11,7 @@
 
     <node name="back_end_node" pkg="lidar_localization" type="back_end_node"  output="screen"/>
 
-    <!-- <node name="loop_closing_node" pkg="lidar_localization" type="loop_closing_node"  output="screen"/> -->
+    <node name="loop_closing_node" pkg="lidar_localization" type="loop_closing_node"  output="screen"/>
     
     <node name="viewer_node" pkg="lidar_localization" type="viewer_node"  output="log"/>
 

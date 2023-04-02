@@ -165,7 +165,6 @@ bool LoopClosing::DectectNearestKeyFrame(int& key_frame_index) {
         skip_num = loop_step_;
         return true;
     }
-
 }
 
 bool LoopClosing::CloudRegistration(int key_frame_index) {
@@ -187,7 +186,7 @@ bool LoopClosing::CloudRegistration(int key_frame_index) {
     current_loop_pose_.pose = map_pose.inverse() * result_pose;
 
     // 判断是否有效
-    LOG(INFO)<<"GetFitnessScore: "<<registration_ptr_->GetFitnessScore();
+    LOG(INFO) << "GetFitnessScore: " << registration_ptr_->GetFitnessScore();
     if (registration_ptr_->GetFitnessScore() > fitness_score_limit_)
         return false;
     static int loop_close_cnt = 0;
@@ -200,12 +199,39 @@ bool LoopClosing::CloudRegistration(int key_frame_index) {
     return true;
 }
 
+// bool LoopClosing::JoinMap(int key_frame_index, CloudData::CLOUD_PTR& map_cloud_ptr, Eigen::Matrix4f& map_pose) {
+//     // gns0 => gns_cur0
+//     map_pose = all_key_gnss_.at(key_frame_index).pose;
+//     current_loop_pose_.index0 = all_key_frames_.at(key_frame_index).index;
+
+//     // 获取 map to lidar0
+//     // gns0 => gns_cur0 * (gns0 => laser_cur0) 逆 = laser_cur0 => gns_cur0
+//     Eigen::Matrix4f pose_to_gnss = map_pose * all_key_frames_.at(key_frame_index).pose.inverse();
+
+//     for (int i = key_frame_index - extend_frame_num_; i < key_frame_index + extend_frame_num_; ++i) {
+//         std::string file_path = key_frames_path_ + "/key_frame_" + std::to_string(all_key_frames_.at(i).index) +
+//         ".pcd"; CloudData::CLOUD_PTR cloud_ptr(new CloudData::CLOUD());
+
+//         pcl::io::loadPCDFile(file_path, *cloud_ptr);
+//         // map_to_lidar0* lidar0_to_lidar_cur = map_to_lidar_cur
+//         // laser_cur0 => gns_cur0 * gns0 => laser_cur1
+//         Eigen::Matrix4f cloud_pose = pose_to_gnss * all_key_frames_.at(i).pose;
+//         pcl::transformPointCloud(*cloud_ptr, *cloud_ptr, cloud_pose);
+
+//         *map_cloud_ptr += *cloud_ptr;
+//     }
+//     map_filter_ptr_->Filter(map_cloud_ptr, map_cloud_ptr);
+//     return true;
+// }
+
 bool LoopClosing::JoinMap(int key_frame_index, CloudData::CLOUD_PTR& map_cloud_ptr, Eigen::Matrix4f& map_pose) {
-    map_pose = all_key_gnss_.at(key_frame_index).pose;
+    // gns0 => gns_cur0
+    // map_pose = all_key_gnss_.at(key_frame_index).pose;
     current_loop_pose_.index0 = all_key_frames_.at(key_frame_index).index;
 
     // 获取 map to lidar0
-    Eigen::Matrix4f pose_to_gnss = map_pose * all_key_frames_.at(key_frame_index).pose.inverse();
+    // gns0 => gns_cur0 * (gns0 => laser_cur0) 逆 = laser_cur0 => gns_cur0
+    Eigen::Matrix4f laser_center_pose = all_key_frames_.at(key_frame_index).pose;
 
     for (int i = key_frame_index - extend_frame_num_; i < key_frame_index + extend_frame_num_; ++i) {
         std::string file_path = key_frames_path_ + "/key_frame_" + std::to_string(all_key_frames_.at(i).index) + ".pcd";
@@ -213,7 +239,9 @@ bool LoopClosing::JoinMap(int key_frame_index, CloudData::CLOUD_PTR& map_cloud_p
 
         pcl::io::loadPCDFile(file_path, *cloud_ptr);
         // map_to_lidar0* lidar0_to_lidar_cur = map_to_lidar_cur
-        Eigen::Matrix4f cloud_pose = pose_to_gnss * all_key_frames_.at(i).pose;
+        // laser_cur0 => gns_cur0 * gns0 => laser_cur1
+
+        Eigen::Matrix4f cloud_pose = all_key_frames_.at(i).pose * laser_center_pose;
         pcl::transformPointCloud(*cloud_ptr, *cloud_ptr, cloud_pose);
 
         *map_cloud_ptr += *cloud_ptr;
